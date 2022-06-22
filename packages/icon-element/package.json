@@ -1,0 +1,25 @@
+{
+  "name": "@resonate/icon-element",
+  "version": "1.4.0",
+  "description": "Icon element",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint . && dependency-check ."
+  },
+  "keywords": [
+    "svg"
+  ],
+  "author": "Augustin Godiscal <auggod@resonate.is>",
+  "repository": "resonatecoop/stream2own",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/resonatecoop/stream2own/issues"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "nanohtml": "^1.8.1"
+  }
+}

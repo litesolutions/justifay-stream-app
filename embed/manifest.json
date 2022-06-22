@@ -1,0 +1,16 @@
+{
+  "name": "embed",
+  "short_name": "embed",
+  "description": "Player embed",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000",
+  "theme_color": "#000",
+  "icons": [
+    {
+      "src": "https://static.resonate.is/pwa_assets/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

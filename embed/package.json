@@ -1,0 +1,72 @@
+{
+  "name": "embed",
+  "version": "7.0.0-1",
+  "private": true,
+  "scripts": {
+    "build": "NODE_ENV=production jalla build index.js --dir dist --base /embed",
+    "start": "NODE_ENV=production jalla serve index.js --dir dist --base /embed",
+    "dev": "jalla index.js --base /embed",
+    "audit:npm": "npm audit",
+    "test": "run-s test:lint test:deps",
+    "test:lint": "eslint .",
+    "test:browser": "browserify -t [babelify] test/browser/index.js | tape-run --port 5000 --keep-open | tap-format-spec",
+    "test:deps": "dependency-check . -i @resonate/tachyons --no-dev"
+  },
+  "browser": {
+    "assert": "nanoassert"
+  },
+  "browserslist": [
+    "last 1 version",
+    ">1%",
+    "not dead"
+  ],
+  "browserify": {
+    "transform": [
+      [
+        "@resonate/envlocalify",
+        {
+          "envfile": "./.env",
+          "global": true
+        }
+      ]
+    ]
+  },
+  "documentify": {
+    "transform": [
+      "./documents/base.js",
+      "../beta/src/documentify/variables.js"
+    ]
+  },
+  "postcss": {
+    "plugins": {
+      "postcss-import": {},
+      "postcss-preset-env": {
+        "stage": 1,
+        "features": {
+          "nesting-rules": true
+        }
+      },
+      "postcss-custom-media": {}
+    }
+  },
+  "license": "gpl3",
+  "dependencies": {
+    "@resonate/api-factory-generator": "*",
+    "@resonate/choo-plugins": "*",
+    "@resonate/dialog-component": "*",
+    "@resonate/grid": "*",
+    "@resonate/icon-element": "*",
+    "@resonate/link-element": "*",
+    "@resonate/player-component": "*",
+    "@resonate/playlist-component": "*",
+    "@resonate/svg-image-placeholder": "*",
+    "@resonate/tachyons": "*",
+    "@resonate/theme-skins": "*",
+    "@resonate/track-component": "*",
+    "choo": "^7.1.0",
+    "choo-devtools": "^3.0.4",
+    "choo-service-worker": "^2.4.0",
+    "nanologger": "^1.3.1",
+    "swagger-client": "^3.18.4"
+  }
+}

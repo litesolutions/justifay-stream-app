@@ -1,0 +1,26 @@
+{
+  "name": "@resonate/envlocalify",
+  "version": "1.1.1",
+  "description": "Bundle env variables",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint . && npm run test-deps",
+    "test-deps": "dependency-check . && dependency-check . --extra"
+  },
+  "keywords": [
+    "browserify"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Augustin Godiscal <auggod@resonate.is>",
+  "repository": "resonatecoop/stream2own",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/resonatecoop/stream2own/issues"
+  },
+  "dependencies": {
+    "envify": "^4.1.0",
+    "localenv": "^0.2.2"
+  }
+}
