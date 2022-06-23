@@ -1,10 +1,16 @@
+ARG RELEASE_TAG=development
 FROM node:16-alpine
+
+ARG RELEASE_TAG
 
 RUN apk --no-cache add git # just in case some modules needs to be installed using git
 
-WORKDIR /var/www/app
+RUN mkdir /build
+WORKDIR /build
 
-COPY . .
+RUN git clone --branch ${RELEASE_TAG} --single-branch --depth 1 https://github.com/litesolutions/justifay-stream-app
+
+WORKDIR /build/justifay-stream-app
 
 ENV NODE_ENV=development
 
