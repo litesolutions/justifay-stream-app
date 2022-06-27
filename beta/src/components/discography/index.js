@@ -162,7 +162,7 @@ class Discography extends Component {
           </ul>
         `
       },
-      notFound: () => renderMessage({ message: `${name} has yet to upload music on Resonate.` }),
+      notFound: () => renderMessage({ message: `${name} has yet to upload music on Justifay.` }),
       error: () => renderMessage({ message: 'Failed to fetch albums' })
     }[this.local.machine.state]
 

@@ -53,7 +53,7 @@ module.exports = () => {
 
             <p class="lh-copy f5">Functional cookies are used to keep you logged in for a while, remember your theme settings and redirects you to a different home page.</p>
 
-            <p class="lh-copy f5 b">Disable functional cookies only if you expect Resonate to not persist your session.</p>
+            <p class="lh-copy f5 b">Disable functional cookies only if you expect Justifay to not persist your session.</p>
 
             <div class="flex flex-auto items-center justify-center mr5-l">
               <div class="mr4 mr2-l">
@@ -70,7 +70,7 @@ module.exports = () => {
 
             <h3 class="fw1 f4 lh-title">Analytics (self hosted offen instance)</h3>
 
-            <p class="lh-copy f5">We only access usage data with your consent. You can opt out and delete any time. <a target="_blank" href="https://offen.stream.resonate.coop">Learn more</a>. Usage data may be periodically purged.</p>
+            <p class="lh-copy f5">We only access usage data with your consent. You can opt out and delete any time. Usage data may be periodically purged.</p>
 
             <h3 class="fw1 f4 lh-title">Stripe</h3>
 
@@ -97,13 +97,10 @@ module.exports = () => {
           <div class="flex flex-column flex-row-l pv2">
             <div class="flex items-center flex-auto">
               <p class="lh-copy pl3 pr5">
-                To ensure you get the best experience <b>${process.env.APP_DOMAIN}</b> uses cookies. ${link({ prefix: 'link underline dib', href: 'https://resonate.is/cookie-policy', target: '_blank', text: 'Learn more' })}.
+                To ensure you get the best experience <b>${process.env.APP_DOMAIN}</b> uses cookies. ${link({ prefix: 'link underline dib', href: 'https://justifay.com/politica-cookies/', target: '_blank', text: 'Learn more' })}.
               </p>
             </div>
             <div class="flex flex-auto items-center justify-center mr5-l">
-              <div class="mr4 mr2-l">
-                ${button({ size: 'none', theme: 'light', outline: true, type: 'submit', value: 'deny', text: 'Deny all' })}
-              </div>
               <div class="mr4 mr2-l">
                 ${button({ size: 'none', theme: 'light', outline: true, type: 'submit', value: 'allow', text: 'Allow all' })}
               </div>

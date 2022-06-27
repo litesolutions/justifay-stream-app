@@ -87,7 +87,7 @@ class RandomLogo extends Component<{}> {
       <div class="fl w-100 pa4">
         <figure ${attrs}>
           <span role="img" class="aspect-ratio--object cover random-logo" style=${style}></span>
-          <figcaption class="clip">Resonate Coop Logo</figcaption>
+          <figcaption class="clip">Justifay Coop Logo</figcaption>
         </figure>
       </div>
     `
@@ -170,7 +170,7 @@ function renderList (): HTMLElement {
       altText: 'Ownership',
       title: 'Ownership',
       text: [
-        'Co-own your platform and become a part of an active community where you share in decisions and profits by becoming a Resonate cooperative member.'
+        'Co-own your platform and become a part of an active community where you share in decisions and profits by becoming a Justifay cooperative member.'
       ]
     },
     {
@@ -238,7 +238,7 @@ function renderCta (): HTMLElement {
   return html`
     <section id="listening-now" class="flex flex-auto flex-column flex-row-l mb5">
       <div class="flex flex-auto items-center justify-center flex-column w-100">
-        <h2 class="lh-title fw1 f4 ma0 mb4 tc">Create an account, and get .128 Resonate credits (about 4 hours of listening) FREE!</h2>
+        <h2 class="lh-title fw1 f4 ma0 mb4 tc">Create an account, and get .128 Justifay credits (about 4 hours of listening) FREE!</h2>
         <div class="flex flex-auto flex-column flex-row-ns">
           <div class="mr3-ns mb3 mb0-ns">
             <a href="https://resonate.is/join" target="_blank" rel="noopener noreferer" class="db ttu b tc link pv3 ph4 ba bw1">Create an account</a>

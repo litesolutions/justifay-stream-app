@@ -242,7 +242,7 @@ function artists () {
     }
 
     function setMeta () {
-      const { name, images = {}, description = `Listen to ${name} on Resonate` } = state.artist.data
+      const { name, images = {}, description = `Listen to ${name} on Justifay` } = state.artist.data
 
       const title = {
         artists: 'Artists',

@@ -1,6 +1,5 @@
 import Player from '@resonate/player-component'
 import Header from '../components/header'
-import Footer from '../components/footer'
 import { background } from '@resonate/theme-skins'
 import { View } from '../views/main'
 
@@ -21,7 +20,6 @@ function Layout (view: () => View): View {
           resolved: state.resolved
         })}
         ${view()(state, emit)}
-        ${state.cache(Footer, 'footer').render()}
         ${renderPlayer()}
       </div>
     `
