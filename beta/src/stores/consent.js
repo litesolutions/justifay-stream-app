@@ -97,7 +97,7 @@ module.exports = () => {
           <div class="flex flex-column flex-row-l pv2">
             <div class="flex items-center flex-auto">
               <p class="lh-copy pl3 pr5">
-                To ensure you get the best experience <b>${process.env.APP_DOMAIN}</b> uses cookies. ${link({ prefix: 'link underline dib', href: 'https://resonate.is/cookie-policy', target: '_blank', text: 'Learn more' })}.
+                To ensure you get the best experience <b>${process.env.APP_DOMAIN}</b> uses cookies. ${link({ prefix: 'link underline dib', href: 'https://justifay.com/politica-cookies', target: '_blank', text: 'Learn more' })}.
               </p>
             </div>
             <div class="flex flex-auto items-center justify-center mr5-l">
