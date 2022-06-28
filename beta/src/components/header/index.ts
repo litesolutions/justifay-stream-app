@@ -280,12 +280,6 @@ class Header extends Component<HeaderProps> {
               }))}
             </li>
             <li class="flex flex-auto-l w-100-l justify-center" role="menuitem">
-              <button title="Open learn menu" class="bg-transparent near-black near-black--light near-white--dark bn dropdown-toggle grow pa3">
-                <div class="flex justify-center items-center">
-                  <span>Learn</span>
-                  <div class="ph2">${icon('caret-down', { size: 'xxs' })}</div>
-                </div>
-              </button>
               <ul role="menu" class="${bg} ba bw b--mid-gray b--mid-gray--light b--near-black--dark list ma0 pa0 absolute right-0 dropdown z-999 top-100" style="left:0;width:120px;">
                 <li>
                   <a class="link db w-100 ph3 pv2 bg-animate hover-bg-light-gray hover-bg-light-gray--light hover-bg-dark-gray--dark" href="https://resonate.coop/about" target="_blank">About</a>
