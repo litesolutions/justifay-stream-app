@@ -17,7 +17,7 @@ class Baneer extends Component {
       <div class="no-js relative">
         <noscript>
           <p class="f5 lh-copy pl3">
-            For the best experience with Resonate, please ensure that your browser has ${link({
+            For the best experience with Justifay, please ensure that your browser has ${link({
               href: 'https://www.enable-javascript.com',
               prefix: 'b',
               text: 'Javascript enabled',

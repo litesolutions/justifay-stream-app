@@ -22,7 +22,7 @@ const Playlist = require('@resonate/playlist-component')
 function app () {
   return (state, emitter) => {
     Object.assign(state, {
-      title: 'Resonate',
+      title: 'Justifay',
       credits: 0,
       resolved: false,
       library: {
@@ -42,7 +42,7 @@ function app () {
 
     function setMeta () {
       const title = {
-        '/': 'Resonate',
+        '/': 'Justifay',
         discover: 'Discover',
         faq: 'FAQ',
         login: 'Login',

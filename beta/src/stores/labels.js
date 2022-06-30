@@ -418,7 +418,7 @@ function labels () {
     }
 
     function setMeta () {
-      const { name, images = {}, description = `Listen to ${name} on Resonate` } = state.label.data
+      const { name, images = {}, description = `Listen to ${name} on Justifay` } = state.label.data
 
       const title = {
         labels: 'Labels',

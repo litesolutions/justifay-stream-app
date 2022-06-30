@@ -376,7 +376,7 @@ function tracks () {
         'og:title': fullTitle,
         'og:type': 'website',
         'og:url': `${process.env.API_DOMAIN}/tracks/${id}`,
-        'og:description': `Listen to ${trackTitle} on Resonate`,
+        'og:description': `Listen to ${trackTitle} on Justifay`,
         'twitter:card': 'player',
         'twitter:title': fullTitle,
         'twitter:image': cover,

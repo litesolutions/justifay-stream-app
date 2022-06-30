@@ -41,7 +41,7 @@ class Footer extends Component {
               </dd>
             </dl>
 
-            <p class="dark-gray f5 ttu">© 2015-${new Date().getFullYear()} Resonate Coop</p>
+            <p class="dark-gray f5 ttu">© 2015-${new Date().getFullYear()} Justifay Coop</p>
           </div>
           <div class="flex flex-column h-100">
             <dl>
@@ -142,7 +142,7 @@ class Footer extends Component {
         </div>
 
         <div>
-          <a href="/" title="Resonate" class="link dib">
+          <a href="/" title="Justifay" class="link dib">
             ${icon('resonate', { size: 'full-width', class: 'fill-white mh4 mh3-l pa3' })}
           </a>
         </div>

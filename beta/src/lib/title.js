@@ -1,5 +1,5 @@
 const separator = ' • '
-const title = 'Resonate'
+const title = 'Justifay'
 
 module.exports = (viewName) => {
   if (viewName === title) return title
