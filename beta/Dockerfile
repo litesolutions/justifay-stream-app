@@ -23,7 +23,7 @@ WORKDIR /build
 
 RUN git clone --branch ${RELEASE_TAG} --single-branch --depth 1 https://github.com/litesolutions/justifay-stream-app
 
-RUN touch /build/justifay-stream-app/beta/.env
+RUN cp /build/justifay-stream-app/beta/.env.example /build/justifay-stream-app/beta/.env
 
 WORKDIR /build/justifay-stream-app
 
