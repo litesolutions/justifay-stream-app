@@ -19,7 +19,6 @@ const html = require('choo/html')
 interface HeaderProps {
   resolved?: boolean
   href?: boolean
-  credits?: number
   user?: {}
 }
 
@@ -41,8 +40,6 @@ class Header extends Component<HeaderProps> {
     this.state = state
 
     this.local.user = {}
-
-    this.local.credits = 0
 
     this.local.machine = nanostate.parallel({
       library: nanostate('off', {
@@ -136,7 +133,6 @@ class Header extends Component<HeaderProps> {
   }
 
   createElement (props): HTMLElement {
-    this.local.credits = props.credits
     this.local.user = props.user ?? {}
     this.local.resolved = props.resolved
     this.local.href = props.href
@@ -166,17 +162,8 @@ class Header extends Component<HeaderProps> {
             <li class="flex flex-auto w-100 justify-center relative${this.state.href === '/discover' ? ' active' : ''}" role="menuitem">
               <a href="/discover" class="link db near-black near-black--light near-white--dark pv2 ph3">Discover</a>
             </li>
-            ${this.state.user.uid
-              ? html`
-                <li class="flex flex-auto w-100 justify-center relative${this.state.href.includes('library') ? ' active' : ''}" role="menuitem">
-                  <a href="/u/${this.state.user.uid}/library/favorites" class="link dn db-l near-black near-black--light near-white--dark pv2 ph3">Library</a>
-                  <a href="javascript:;" class="db dn-l link near-black near-black--light near-white--dark pv2 ph3" title="Open Library Menu" onclick=${(e) => this.local.machine.emit('library:toggle')} >
-                      Library
-                  </a>
-                </li>
-              `
-              : html`<li class="flex flex-auto w-100 justify-center" role="divider"></li>`}
-            <li class="${this.state.resolved && !this.state.user.uid ? 'flex' : 'dn'} flex-auto justify-center w-100 grow" role="menuitem">
+            <li class="flex flex-auto w-100 justify-center" role="divider"></li>
+            <li class="${this.state.resolved && !this.state.user.id ? 'flex' : 'dn'} flex-auto justify-center w-100 grow" role="menuitem">
             ${this.state.href !== '/login'
               ? html`<a class="link pv1 ph3 ttu ba b--mid-gray b--dark-gray--dark db f6 b" href=${AUTH_HREF} >
                   Log In
@@ -184,7 +171,7 @@ class Header extends Component<HeaderProps> {
               : ''}
             </li>
             <li class="${this.state.resolved ? 'dn' : 'flex'} flex-auto w-100 justify-center" role="divider"></li>
-            <li class="${!this.state.user.uid ? 'dn' : 'flex'} flex-auto justify-center w-100" role="menuitem">
+            <li class="${!this.state.user.id ? 'dn' : 'flex'} flex-auto justify-center w-100" role="menuitem">
               <button title="Open menu" class="bg-transparent bn dropdown-toggle w-100 pa2 grow">
                 <span class="flex justify-center items-center">
                   <div class="fl w-100 mw2">
@@ -206,12 +193,6 @@ class Header extends Component<HeaderProps> {
                     <span class="b">${displayName}</span>
                   </div>
                 </li>
-                <li class="bb bw b--mid-gray b--mid-gray--light b--near-black--dark mv3" role="separator"></li>
-                <li class="${!this.state.user.uid ? 'dn' : 'flex'} items-center ph3" role="menuitem">
-                  <b class="${this.local.credits && this.local.credits < 0.128 ? 'red' : ''}">${this.local.credits}</b>
-                  <div class="flex flex-auto justify-end">
-                  </div>
-                </li>
                 <li class="bb bw b--mid-gray b--mid-gray--light b--near-black--dark mt3 mb2" role="separator"></li>
                 <li class="mb1" role="menuitem">
                   ${this.state.cache(ThemeSwitcher, 'theme-switcher-header').render()}
@@ -230,7 +211,7 @@ class Header extends Component<HeaderProps> {
                   <a class="link db pv2 pl3" href="/settings">Settings</a>
                 </li>
                 <li class="bb bw b--mid-gray b--mid-gray--light b--near-black--dark mb3" role="separator"></li>
-                <li class="${!this.state.user.uid ? 'dn' : ''} pr3 pb3" role="menuitem">
+                <li class="${!this.state.user.id ? 'dn' : ''} pr3 pb3" role="menuitem">
                   <div class="flex justify-end">
                     ${button({
                       prefix: 'ttu near-black near-black--light near-white--dark f6 ba b--mid-gray b--mid-gray--light b--dark-gray--dark',
@@ -264,7 +245,7 @@ class Header extends Component<HeaderProps> {
       onClick: e => {
         e.preventDefault()
 
-        this.emit(this.state.events.PUSHSTATE, this.state.user.uid ? '/discover' : '/')
+        this.emit(this.state.events.PUSHSTATE, this.state.user.id ? '/discover' : '/')
       },
       prefix: 'link flex items-center flex-shrink-0 h-100 ph2 ml2 overflow-hidden',
       title: 'Justifay'
@@ -314,7 +295,7 @@ class Header extends Component<HeaderProps> {
   }
 
   renderSubMenuItems ({ name = 'library', eventName }, machine): HTMLElement {
-    const baseHref = `/u/${this.state.user.uid}/library`
+    const baseHref = `/u/${this.state.user.id}/library`
     const items = {
       library: [
         {
@@ -409,8 +390,7 @@ class Header extends Component<HeaderProps> {
   }
 
   update (props: HeaderProps): boolean {
-    return props.credits !== this.local.credits ||
-      props.href !== this.local.href ||
+    return props.href !== this.local.href ||
       props.resolved !== this.local.resolved
   }
 }
