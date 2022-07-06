@@ -48,8 +48,8 @@ app.route('*', (state, emit) => html`
         orientation: 'bottomright', // menu button orientation
         data: {
           count: 9,
-          url: 'https://beta.stream.resonate.coop/artist/1056',
-          cover: 'https://static.resonate.is/track-artwork/600x600/098bd10e-c4e2-4824-ac73-8b5efbe440f5',
+          url: 'https://beta.stream.justifay.coop/artist/1056',
+          cover: 'https://static.justifay.is/track-artwork/600x600/098bd10e-c4e2-4824-ac73-8b5efbe440f5',
           creator_id: 1056,
           id: 144
         }

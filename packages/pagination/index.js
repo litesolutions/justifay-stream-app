@@ -1,8 +1,8 @@
 const Nanocomponent = require('nanocomponent')
 const html = require('nanohtml')
-const icon = require('@resonate/icon-element')
-const { iconFill } = require('@resonate/theme-skins')
-const { nextMultiple, range } = require('@resonate/utils')
+const icon = require('@justifay/icon-element')
+const { iconFill } = require('@justifay/theme-skins')
+const { nextMultiple, range } = require('@justifay/utils')
 const noop = () => {}
 
 class Pagination extends Nanocomponent {

@@ -5,4 +5,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## 1.0.1 (2019-07-11)
 
-**Note:** Version bump only for package @resonate/utils
+**Note:** Version bump only for package @justifay/utils

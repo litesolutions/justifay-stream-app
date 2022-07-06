@@ -1,11 +1,11 @@
-# @resonate/link-element 
+# @justifay/link-element 
 
 Render an HTML link element
 
 ## Install
 
 ```sh
-npm i --save @resonate/link-element
+npm i --save @justifay/link-element
 ```
 
 ## License
@@ -14,4 +14,4 @@ MIT
 
 ## Author(s)
 
-- Augustin Godiscal <auggod@resonate.is>
+- Augustin Godiscal <auggod@justifay.is>

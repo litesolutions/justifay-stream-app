@@ -1,14 +1,14 @@
 import startLayout from '../../layouts/start'
-import icon from '@resonate/icon-element'
+import icon from '@justifay/icon-element'
 import { isNode } from 'browser-or-node'
 import Component from 'choo/component'
-import imagePlaceholder from '@resonate/svg-image-placeholder'
+import imagePlaceholder from '@justifay/svg-image-placeholder'
 import { AppState } from '../../types'
 import { View } from '../main'
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const html = require('choo/html')
 
-const ASSETS_PATH = 'https://static.resonate.is/pwa_assets'
+const ASSETS_PATH = 'https://static.justifay.is/pwa_assets'
 
 /**
  * Display random logo on load
@@ -103,7 +103,7 @@ class RandomLogo extends Component<{}> {
     this.local.pos = this.local.positions[this.local.current]
 
     img.style.backgroundPosition = `0 ${this.local.pos}%`
-    img.style.backgroundImage = 'url(https://static.resonate.is/pwa_assets/sprite_optimized.png)'
+    img.style.backgroundImage = 'url(https://static.justifay.is/pwa_assets/sprite_optimized.png)'
   }
 
   update (): boolean {
@@ -133,7 +133,7 @@ function renderHero (state, emit): HTMLElement {
             A music streaming platform owned and run by its members – artists, labels, listeners, and builders.
           </p>
           <div class="flex flex-auto items-center items-start-ns flex-column flex-row-ns mt4 mt0-ns">
-            <a href="https://resonate.is/join" target="_blank" rel="noopener noreferer" class="db dim ttu w-100 w-auto-ns tc b link pv3 mr2-ns ph3 ph4-l ba bw1">
+            <a href="https://justifay.is/join" target="_blank" rel="noopener noreferer" class="db dim ttu w-100 w-auto-ns tc b link pv3 mr2-ns ph3 ph4-l ba bw1">
               Become a member
             </a>
             <a href="/login" class="db dim b tc link w-100 w-auto-ns mt4 mt0-ns pv3 ph3 ph4-l">Login to the player</a>
@@ -241,7 +241,7 @@ function renderCta (): HTMLElement {
         <h2 class="lh-title fw1 f4 ma0 mb4 tc">Create an account, and get .128 Justifay credits (about 4 hours of listening) FREE!</h2>
         <div class="flex flex-auto flex-column flex-row-ns">
           <div class="mr3-ns mb3 mb0-ns">
-            <a href="https://resonate.is/join" target="_blank" rel="noopener noreferer" class="db ttu b tc link pv3 ph4 ba bw1">Create an account</a>
+            <a href="https://justifay.is/join" target="_blank" rel="noopener noreferer" class="db ttu b tc link pv3 ph4 ba bw1">Create an account</a>
           </div>
           <div>
             <a href="/login" class="db b tc link pv3 ph4">Login to the player</a>

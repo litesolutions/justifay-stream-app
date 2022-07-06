@@ -1,7 +1,7 @@
 const html = require('choo/html')
 const Component = require('choo/component')
-const icon = require('@resonate/icon-element')
-const link = require('@resonate/link-element')
+const icon = require('@justifay/icon-element')
+const link = require('@justifay/link-element')
 
 class Footer extends Component {
   constructor (id, state, emit) {
@@ -20,24 +20,24 @@ class Footer extends Component {
             <dl>
               <dt class="ttu mb2">Learn</dt>
               <dd class="ma0 pb2">
-                ${link({ prefix: 'link mid-gray pa0 lh-copy', text: 'About', href: 'https://resonate.coop/about', target: '_blank' })}
+                ${link({ prefix: 'link mid-gray pa0 lh-copy', text: 'About', href: 'https://justifay.coop/about', target: '_blank' })}
               </dd>
               <dd class="ma0 pb2">
-                ${link({ prefix: 'link mid-gray pa0 lh-copy', text: 'Pricing', href: 'https://resonate.coop/pricing', target: '_blank' })}
+                ${link({ prefix: 'link mid-gray pa0 lh-copy', text: 'Pricing', href: 'https://justifay.coop/pricing', target: '_blank' })}
               </dd>
               <dd class="ma0 pb2">
-                ${link({ prefix: 'link mid-gray pa0 lh-copy', text: 'The Co-op', href: 'https://resonate.coop/the-coop', target: '_blank' })}
+                ${link({ prefix: 'link mid-gray pa0 lh-copy', text: 'The Co-op', href: 'https://justifay.coop/the-coop', target: '_blank' })}
               </dd>
               <dd class="ma0 pb2">
                 ${link({
                   prefix: 'link mid-gray pa0 lh-copy',
                   text: 'Blog',
-                  href: 'https://resonate.coop/blog',
+                  href: 'https://justifay.coop/blog',
                   target: '_blank'
                 })}
               </dd>
               <dd class="ma0 pb2">
-                ${link({ prefix: 'link mid-gray pa0 lh-copy', text: 'Handbook', href: 'https://community.resonate.is/docs', target: '_blank' })}
+                ${link({ prefix: 'link mid-gray pa0 lh-copy', text: 'Handbook', href: 'https://community.justifay.is/docs', target: '_blank' })}
               </dd>
             </dl>
 
@@ -47,22 +47,22 @@ class Footer extends Component {
             <dl>
               <dt class="ttu mb2">Community</dt>
               <dd class="ma0 pb2">
-                ${link({ prefix: 'link mid-gray pa0 lh-copy', text: 'Join', href: 'https://resonate.is/join', target: '_blank' })}
+                ${link({ prefix: 'link mid-gray pa0 lh-copy', text: 'Join', href: 'https://justifay.is/join', target: '_blank' })}
               </dd>
               <dd class="ma0 pb2">
-                ${link({ prefix: 'link mid-gray pa0 lh-copy', text: 'Volunteering', href: 'https://resonate.coop/volunteering', target: '_blank' })}
+                ${link({ prefix: 'link mid-gray pa0 lh-copy', text: 'Volunteering', href: 'https://justifay.coop/volunteering', target: '_blank' })}
               </dd>
               <dd class="ma0 pb2">
-                ${link({ prefix: 'link mid-gray pa0 lh-copy', text: 'Team', href: 'https://resonate.coop/team', target: '_blank' })}
+                ${link({ prefix: 'link mid-gray pa0 lh-copy', text: 'Team', href: 'https://justifay.coop/team', target: '_blank' })}
               </dd>
               <dd class="ma0 pb2">
-                ${link({ prefix: 'link mid-gray pa0 lh-copy', text: 'Forum', href: 'https://community.resonate.is', target: '_blank' })}
+                ${link({ prefix: 'link mid-gray pa0 lh-copy', text: 'Forum', href: 'https://community.justifay.is', target: '_blank' })}
               </dd>
             </dl>
 
             <div class="flex flex-column h-100 justify-end">
               <p class="dark-gray f5">
-                ${link({ prefix: 'link ttu', href: 'https://resonate.is/terms-conditions', text: 'Terms + Conditions' })}
+                ${link({ prefix: 'link ttu', href: 'https://justifay.is/terms-conditions', text: 'Terms + Conditions' })}
               </p>
             </div>
           </div>
@@ -72,10 +72,10 @@ class Footer extends Component {
               <dt class="ttu mb2">Connect</dt>
               <dd class="ma0 pb2">
                 ${[
-                  { href: 'https://twitter.com/resonatecoop', text: 'TW' },
-                  { href: 'https://www.facebook.com/resonatecoop', text: 'FB' },
-                  { href: 'https://www.instagram.com/resonate_coop/', text: 'IG' },
-                  { href: 'https://resonate.coop/new/the-blog/feed/', text: 'RSS' }
+                  { href: 'https://twitter.com/justifaycoop', text: 'TW' },
+                  { href: 'https://www.facebook.com/justifaycoop', text: 'FB' },
+                  { href: 'https://www.instagram.com/justifay_coop/', text: 'IG' },
+                  { href: 'https://justifay.coop/new/the-blog/feed/', text: 'RSS' }
                 ].map(props => {
                   return link(Object.assign(props, { prefix: 'link mid-gray ttu pa0 lh-copy mr2', target: '_blank' }))
                 })}
@@ -84,7 +84,7 @@ class Footer extends Component {
                 ${link({
                   prefix: 'link mid-gray pa0 lh-copy',
                   text: 'Contact',
-                  href: 'https://resonate.coop/contact',
+                  href: 'https://justifay.coop/contact',
                   target: '_blank'
                 })}
               </dd>
@@ -92,7 +92,7 @@ class Footer extends Component {
 
             <div class="flex flex-column h-100 justify-end">
               <p class="dark-gray f5">
-                ${link({ prefix: 'link ttu', href: 'https://resonate.coop/privacy-policy', text: 'Privacy Policy' })}
+                ${link({ prefix: 'link ttu', href: 'https://justifay.coop/privacy-policy', text: 'Privacy Policy' })}
               </p>
             </div>
           </div>
@@ -105,7 +105,7 @@ class Footer extends Component {
                 ${link({
                   prefix: 'link mid-gray pa0 lh-copy',
                   text: 'Documentation',
-                  href: 'https://docs.resonate.coop',
+                  href: 'https://docs.justifay.coop',
                   target: '_blank'
                 })}
               </dd>
@@ -113,7 +113,7 @@ class Footer extends Component {
                 ${link({
                   prefix: 'link mid-gray pa0 lh-copy',
                   text: 'GitHub',
-                  href: 'https://github.com/resonatecoop',
+                  href: 'https://github.com/justifaycoop',
                   target: '_blank'
                 })}
               </dd>
@@ -121,7 +121,7 @@ class Footer extends Component {
                 ${link({
                   prefix: 'link mid-gray pa0 lh-copy',
                   text: 'Report a problem',
-                  href: 'https://github.com/resonatecoop/resonate/issues',
+                  href: 'https://github.com/justifaycoop/justifay/issues',
                   target: '_blank'
                 })}
               </dd>
@@ -129,7 +129,7 @@ class Footer extends Component {
                 ${link({
                   prefix: 'link mid-gray pa0 lh-copy',
                   text: 'Donate',
-                  href: 'https://resonate.coop/donate',
+                  href: 'https://justifay.coop/donate',
                   target: '_blank'
                 })}
               </dd>
@@ -143,7 +143,7 @@ class Footer extends Component {
 
         <div>
           <a href="/" title="Justifay" class="link dib">
-            ${icon('resonate', { size: 'full-width', class: 'fill-white mh4 mh3-l pa3' })}
+            ${icon('justifay', { size: 'full-width', class: 'fill-white mh4 mh3-l pa3' })}
           </a>
         </div>
       </footer>

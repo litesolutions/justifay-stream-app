@@ -1,5 +1,5 @@
 const html = require('choo/html')
-const button = require('@resonate/button')
+const button = require('@justifay/button')
 const viewLayout = require('../../layouts/default')
 
 module.exports = () => viewLayout(renderSettings)
@@ -48,7 +48,7 @@ function renderSettings (state, emit) {
             ? html`
             <br>
             <br>
-            <p class="lh-copy f5 b">Disable functional cookies only if you expect Resonate to not persist your session.</p>
+            <p class="lh-copy f5 b">Disable functional cookies only if you expect Justifay to not persist your session.</p>
             `
             : ''
             }

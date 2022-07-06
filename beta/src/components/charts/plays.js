@@ -2,7 +2,7 @@ const html = require('choo/html')
 const Component = require('choo/component')
 const Chartist = require('chartist')
 const format = require('date-fns/format')
-const { getAPIServiceClientWithAuth } = require('@resonate/api-service')({
+const { getAPIServiceClientWithAuth } = require('@justifay/api-service')({
   apiHost: process.env.APP_HOST,
   base: process.env.API_BASE || '/api/v3'
 })

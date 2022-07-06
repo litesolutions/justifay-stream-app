@@ -12,7 +12,7 @@ Minimal beta player for web embeds.
     height="600"
     style="margin:0;border:none;width:400px;height:600px;border: 1px solid #000;"
     sandbox="allow-same-origin allow-scripts"
-    src="https://beta.stream.resonate.coop/embed/track/144"
+    src="https://beta.stream.justifay.coop/embed/track/144"
   ></iframe>
 ```
 
@@ -29,10 +29,10 @@ Route prefix is `/embed` by default.
 Example:
 
 ```sh
-API_DOMAIN=beta.stream.resonate.localhost
+API_DOMAIN=beta.stream.justifay.localhost
 API_PREFIX=/api/v1
-APP_HOSTNAME=https://beta.stream.resonate.localhost
-SITE_DOMAIN=resonate.localhost
+APP_HOSTNAME=https://beta.stream.justifay.localhost
+SITE_DOMAIN=justifay.localhost
 DISABLE_NANOTIMING=no
 LOG_LEVEL=debug
 ```

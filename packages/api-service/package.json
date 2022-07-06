@@ -1,5 +1,5 @@
 {
-  "name": "@resonate/api-service",
+  "name": "@justifay/api-service",
   "version": "1.1.0",
   "description": "API Service Swagger Client Loader",
   "main": "index.js",
@@ -10,14 +10,14 @@
     "api",
     "swagger"
   ],
-  "repository": "resonatecoop/stream",
+  "repository": "justifaycoop/stream",
   "publishConfig": {
     "access": "public"
   },
   "bugs": {
-    "url": "https://github.com/resonatecoop/stream/issues"
+    "url": "https://github.com/justifaycoop/stream/issues"
   },
-  "author": "Augustin Godiscal <auggod@resonate.is>",
+  "author": "Augustin Godiscal <auggod@justifay.is>",
   "license": "MIT",
   "dependencies": {
     "nanolru": "^1.0.0",

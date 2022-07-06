@@ -3,10 +3,10 @@ const log = nanologger('store:artists')
 const setTitle = require('../lib/title')
 const Profiles = require('../components/profiles')
 const Discography = require('../components/discography')
-const Playlist = require('@resonate/playlist-component')
+const Playlist = require('@justifay/playlist-component')
 const setLoaderTimeout = require('../lib/loader-timeout')
 const resolvePlaysAndFavorites = require('../lib/resolve-plays-favorites')
-const { getAPIServiceClient } = require('@resonate/api-service')({
+const { getAPIServiceClient } = require('@justifay/api-service')({
   apiHost: process.env.APP_HOST,
   base: process.env.API_BASE || '/api/v3'
 })
@@ -268,10 +268,10 @@ function artists () {
         'og:description': description,
         'og:title': setTitle(title),
         'og:type': 'website',
-        'og:url': 'https://beta.stream.resonate.coop' + state.href,
+        'og:url': 'https://beta.stream.justifay.coop' + state.href,
         'twitter:card': 'summary_large_image',
         'twitter:description': description,
-        'twitter:site': '@resonatecoop',
+        'twitter:site': '@justifaycoop',
         'twitter:title': setTitle(title)
       }
 
@@ -319,7 +319,7 @@ function artists () {
                   }
                 ],
                 track: item.track,
-                url: item.track.url || `https://api.resonate.is/v1/stream/${item.track.id}`
+                url: item.track.url || `https://api.justifay.is/v1/stream/${item.track.id}`
               }
             })
           })
@@ -397,7 +397,7 @@ function artists () {
               }
             ],
             track: item,
-            url: item.url || `https://api.resonate.is/v1/stream/${item.id}`
+            url: item.url || `https://api.justifay.is/v1/stream/${item.id}`
           }
         })
 

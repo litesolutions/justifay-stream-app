@@ -1,6 +1,6 @@
 const html = require('choo/html')
-const { iconFill } = require('@resonate/theme-skins')
-const icon = require('@resonate/icon-element')
+const { iconFill } = require('@justifay/theme-skins')
+const icon = require('@justifay/icon-element')
 
 module.exports = (props) => {
   const { href, text } = props

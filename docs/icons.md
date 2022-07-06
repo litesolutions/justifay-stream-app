@@ -6,7 +6,7 @@
 // some-element.js
 
 const html = require('choo/html')
-const icon = require('@resonate/icon-element')
+const icon = require('@justifay/icon-element')
 
 function someElement () {
   return html`

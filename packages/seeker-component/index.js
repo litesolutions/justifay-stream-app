@@ -1,7 +1,7 @@
 const html = require('nanohtml')
 const Nanocomponent = require('nanocomponent')
 const assert = require('assert')
-const rangeSlider = require('@resonate/rangeslider')
+const rangeSlider = require('@justifay/rangeslider')
 
 /**
  * Seeker using rangeslider-js

@@ -6,21 +6,21 @@ const html = require('nanohtml')
 const Nanocomponent = require('nanocomponent')
 const nanostate = require('nanostate')
 const morph = require('nanomorph')
-const renderCounter = require('@resonate/counter')
-const button = require('@resonate/button')
-const Artwork = require('@resonate/artwork-component')
-const PlayCount = require('@resonate/play-count')
-const NanoPlayer = require('@resonate/nanoplayer')
-const MenuButtonOptions = require('@resonate/menu-button-options-component')
-const Seeker = require('@resonate/seeker-component')
-const VolumeControl = require('@resonate/volume-control-component')
+const renderCounter = require('@justifay/counter')
+const button = require('@justifay/button')
+const Artwork = require('@justifay/artwork-component')
+const PlayCount = require('@justifay/play-count')
+const NanoPlayer = require('@justifay/nanoplayer')
+const MenuButtonOptions = require('@justifay/menu-button-options-component')
+const Seeker = require('@justifay/seeker-component')
+const VolumeControl = require('@justifay/volume-control-component')
 const RoComponent = require('resize-observer-component')
 const Ro = require('resize-observer-polyfill')
 const Nanobounce = require('nanobounce')
 const nanobounce = Nanobounce()
-const TimeElement = require('@resonate/time-element')
-const { borders: borderColors } = require('@resonate/theme-skins')
-const svgImagePlaceholder = require('@resonate/svg-image-placeholder')
+const TimeElement = require('@justifay/time-element')
+const { borders: borderColors } = require('@justifay/theme-skins')
+const svgImagePlaceholder = require('@justifay/svg-image-placeholder')
 
 /*
  * Logging
@@ -288,7 +288,7 @@ class Player extends Nanocomponent {
 
     this.local.hideMenu = props.hideMenu || false
     this.local.hideCount = props.hideCount || true
-    this.local.applicationHostname = props.applicationHostname || process.env.APP_HOST || 'https://stream.resonate.coop'
+    this.local.applicationHostname = props.applicationHostname || process.env.APP_HOST || 'https://stream.justifay.coop'
     this.local.inIframe = props.inIframe || false
 
     if (!this.local.track.id) {
@@ -533,7 +533,7 @@ class Player extends Nanocomponent {
       data: Object.assign({}, this.local.track, {
         count: this.local.count,
         favorite: this.local.favorite || this.local.fav,
-        url: new URL(`/track/${this.local.track.id}`, process.env.APP_HOST || 'https://stream.resonate.coop')
+        url: new URL(`/track/${this.local.track.id}`, process.env.APP_HOST || 'https://stream.justifay.coop')
       }),
       size: this.local.type === 'album' ? 'sm' : 'md', // button size
       orientation: 'topright'

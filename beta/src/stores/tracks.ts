@@ -1,15 +1,15 @@
 import logger from 'nanologger'
 import setTitle from '../lib/title'
 import copy from 'clipboard-copy'
-import Dialog from '@resonate/dialog-component'
+import Dialog from '@justifay/dialog-component'
 import setPlaycount from '../lib/update-counter'
-import button from '@resonate/button'
-import link from '@resonate/link-element'
-import Playlist from '@resonate/playlist-component'
+import button from '@justifay/button'
+import link from '@justifay/link-element'
+import Playlist from '@justifay/playlist-component'
 import LoaderTimeout from '../lib/loader-timeout'
 import resolvePlaysAndFavorites from '../lib/resolve-plays-favorites'
-import APIService from '@resonate/api-service'
-import { calculateRemainingCost, formatCredit } from '@resonate/utils'
+import APIService from '@justifay/api-service'
+import { calculateRemainingCost, formatCredit } from '@justifay/utils'
 import { AppState } from '../types'
 import type { TrackAPIResponse, TracksFindProps } from './tracks.types'
 // eslint-disable-next-line @typescript-eslint/no-var-requires
@@ -67,7 +67,7 @@ function tracks () {
           }
         ],
         track: response.data,
-        url: response.data.url ?? `https://api.resonate.is/v1/stream/${response.data.id}`
+        url: response.data.url ?? `https://api.justifay.is/v1/stream/${response.data.id}`
       }
 
       if (!state.tracks.length) {
@@ -144,7 +144,7 @@ function tracks () {
               }
             ],
             track: track,
-            url: track.url || `https://api.resonate.is/v1/stream/${track.id}`
+            url: track.url || `https://api.justifay.is/v1/stream/${track.id}`
           }
         })
 
@@ -252,7 +252,7 @@ function tracks () {
             const support = link({
               prefix: 'link bb bw pb1 b--near-black b',
               text: 'our support page',
-              href: 'https://resonate.is/music/support',
+              href: 'https://justifay.is/music/support',
               target: '_blank'
             })
 
@@ -275,7 +275,7 @@ function tracks () {
             const support = link({
               prefix: 'link bb bw pb1 b--near-black b',
               text: 'More information on our support page',
-              href: 'https://resonate.is/music/support',
+              href: 'https://justifay.is/music/support',
               target: '_blank'
             })
             const dialogEl = errorDialog.render({
@@ -330,7 +330,7 @@ function tracks () {
             }
           ],
           track: response.data,
-          url: response.data.url || `https://api.resonate.is/v1/stream/${response.data.id}`
+          url: response.data.url || `https://api.justifay.is/v1/stream/${response.data.id}`
         }
 
         if (state.user.uid) {
@@ -380,10 +380,10 @@ function tracks () {
         'twitter:card': 'player',
         'twitter:title': fullTitle,
         'twitter:image': cover,
-        'twitter:site': '@resonatecoop',
+        'twitter:site': '@justifaycoop',
         'twitter:player:width': '400',
         'twitter:player:height': '600',
-        'twitter:player': `https://stream.resonate.coop/embed/track/${id}`
+        'twitter:player': `https://stream.justifay.coop/embed/track/${id}`
       }
 
       emitter.emit('meta', state.meta)

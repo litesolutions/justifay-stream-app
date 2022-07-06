@@ -1,20 +1,20 @@
 const html = require('choo/html')
 const Component = require('choo/component')
-const input = require('@resonate/input-element')
-const button = require('@resonate/button')
+const input = require('@justifay/input-element')
+const button = require('@justifay/button')
 const messages = require('./messages')
 const isEqual = require('is-equal-shallow')
 const logger = require('nanologger')
 const log = logger('form:trackgroups:update')
 const inputField = require('../../elements/input-field')
-const textarea = require('@resonate/textarea-element')
+const textarea = require('@justifay/textarea-element')
 
 const isEmpty = require('validator/lib/isEmpty')
 const isLength = require('validator/lib/isLength')
 const validateFormdata = require('validate-formdata')
 const nanostate = require('nanostate')
 
-const { getAPIServiceClientWithAuth } = require('@resonate/api-service')({
+const { getAPIServiceClientWithAuth } = require('@justifay/api-service')({
   apiHost: process.env.APP_HOST,
   base: process.env.API_BASE || '/api/v3'
 })

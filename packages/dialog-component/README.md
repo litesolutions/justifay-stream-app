@@ -1,11 +1,11 @@
-# @resonate/dialog-component
+# @justifay/dialog-component
 
 Dialog element component
 
 # Installation
 
 ```sh
-npm i --save-dev @resonate/dialog-component
+npm i --save-dev @justifay/dialog-component
 ```
 
 ## License
@@ -14,4 +14,4 @@ MIT
 
 ## Author(s)
 
-- Augustin Godiscal <auggod@resonate.is>
+- Augustin Godiscal <auggod@justifay.is>

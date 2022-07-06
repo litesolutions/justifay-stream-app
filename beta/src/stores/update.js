@@ -1,7 +1,7 @@
 /* global fetch */
 
-const Dialog = require('@resonate/dialog-component')
-const button = require('@resonate/button')
+const Dialog = require('@justifay/dialog-component')
+const button = require('@justifay/button')
 const html = require('choo/html')
 
 const logger = require('nanologger')
@@ -12,7 +12,7 @@ const path = require('path')
 const pkg = JSON.parse(fs.readFileSync(path.join(__dirname, '../package.json'), 'utf8'))
 
 const VERSION = pkg.version
-const PACKAGE_URL = process.env.PACKAGE_URL || 'https://raw.githubusercontent.com/resonatecoop/stream2own/master/beta/package.json'
+const PACKAGE_URL = process.env.PACKAGE_URL || 'https://raw.githubusercontent.com/justifaycoop/stream2own/master/beta/package.json'
 
 module.exports = update
 

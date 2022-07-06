@@ -12,7 +12,7 @@
 const assert = require('assert')
 const Nanocomponent = require('nanocomponent')
 const PopupMenuAction = require('./lib/PopupMenuAction')
-const Button = require('@resonate/button-component')
+const Button = require('@justifay/button-component')
 const noop = () => {}
 
 function makeID () {

@@ -1,15 +1,15 @@
 const Component = require('choo/component')
 const html = require('choo/html')
-const icon = require('@resonate/icon-element')
-const button = require('@resonate/button')
+const icon = require('@justifay/icon-element')
+const button = require('@justifay/button')
 const nanostate = require('nanostate')
 const morph = require('nanomorph')
 const tags = require('../../lib/tags')
-const { getAPIServiceClientWithAuth } = require('@resonate/api-service')({
+const { getAPIServiceClientWithAuth } = require('@justifay/api-service')({
   apiHost: process.env.APP_HOST,
   base: process.env.API_BASE || '/api/v3'
 })
-const { background: bg } = require('@resonate/theme-skins')
+const { background: bg } = require('@justifay/theme-skins')
 
 class Search extends Component {
   constructor (id, state, emit) {

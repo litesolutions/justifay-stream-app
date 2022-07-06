@@ -1,5 +1,5 @@
-const PlayCount = require('@resonate/play-count')
-const renderCounter = require('@resonate/counter')
+const PlayCount = require('@justifay/play-count')
+const renderCounter = require('@justifay/counter')
 const morph = require('nanomorph')
 
 module.exports = props => {

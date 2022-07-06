@@ -1,7 +1,7 @@
 {
-  "name": "@resonate/choo-plugins",
+  "name": "@justifay/choo-plugins",
   "version": "1.1.2",
-  "description": "All choo plugins for resonate",
+  "description": "All choo plugins for justifay",
   "main": "index.js",
   "scripts": {
     "test": "eslint . && dependency-check ."
@@ -13,11 +13,11 @@
   "publishConfig": {
     "access": "public"
   },
-  "author": "Augustin Godiscal <auggod@resonate.is>",
-  "repository": "resonatecoop/stream2own",
+  "author": "Augustin Godiscal <auggod@justifay.is>",
+  "repository": "justifaycoop/stream2own",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/resonatecoop/stream2own/issues"
+    "url": "https://github.com/justifaycoop/stream2own/issues"
   },
   "dependencies": {
     "browser-or-node": "^1.1.0",

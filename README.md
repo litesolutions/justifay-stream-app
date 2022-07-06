@@ -7,24 +7,24 @@
 
 <div align="center">
   <h3>
-    <a href="https://resonate.is">
+    <a href="https://justifay.is">
       Website
     </a>
     <span> | </span>
-    <a href="https://www.twitter.com/resonatecoop/">
+    <a href="https://www.twitter.com/justifaycoop/">
       Twitter
     </a>
     <span> | </span>
-    <a href="https://github.com/resonatecoop/stream2own/blob/master/CONTRIBUTING.md">
+    <a href="https://github.com/justifaycoop/stream2own/blob/master/CONTRIBUTING.md">
       Contributing
     </a>
     <span> | </span>
-    <a href="https://community.resonate.is/t/dev-volunteers-needed-to-build-the-resonate-ecosystem/2262">
+    <a href="https://community.justifay.is/t/dev-volunteers-needed-to-build-the-justifay-ecosystem/2262">
       Developer Guide
     </a>
     <span> | </span>
-    <a href="https://docs.resonate.coop">
-      Resonate Docs
+    <a href="https://docs.justifay.coop">
+      Justifay Docs
     </a>
   </h3>
 </div>
@@ -39,13 +39,7 @@
   </a>
 </div>
 
-Resonate is an open-source music streaming service run by a cooperative of artists and software developers.
-
-If you want to know what we're building or want to get more involved, head over to the Platform category on our [forum](https://community.resonate.is/c/platform/l/latest?board=default) or read the [Developer Guide](https://community.resonate.is/t/dev-volunteers-needed-to-build-the-resonate-ecosystem/2262) in our [Resonate Handbook](https://community.resonate.is/docs).
-
-If you're looking for a good first task, feel encouraged to take on an un-assigned ['help wanted' issues](https://github.com/resonatecoop/stream/issues).
-
-Are you building something using the Resonate [API](#api) and would like to request a change? Resonate welcomes #proposals in the [Co-Operation section of the forum](https://community.resonate.is/c/66).
+If you're looking for a good first task, feel encouraged to take on an un-assigned ['help wanted' issues](https://github.com/lite-solutions/justifay-stream-app/issues).
 
 ## Table of Contents
 - [Development](#development)
@@ -63,12 +57,12 @@ Are you building something using the Resonate [API](#api) and would like to requ
 Quick-n-dirty instructions to get the player up and running on your computer using http and pointing to the existing production API (see [API](#api) to learn more about the API).
 Assumes the latest version of [node.js](https://nodejs.org/).
 
-_Stuck? Make an issue on Github! Curious about the roadmap? Ask in the [forum](https://community.resonate.is/t/development-team/1724)_.
+_Stuck? Make an issue on Github!.
 
 Clone the repo and `cd` into it:
 
 ```sh
-git@github.com:resonatecoop/stream.git
+git@github.com:litesolutions/justifay-stream-app.git
 cd stream
 ```
 
@@ -112,7 +106,7 @@ HTTPS is required to test PWAs on mobile. [Read more about Progressive Web Apps]
 
 #### Nginx
 
-You can find a reference [nginx configuration](/docs/nginx/beta.resonate.localhost.conf) file in the docs.
+You can find a reference [nginx configuration](/docs/nginx/beta.justifay.localhost.conf) file in the docs.
 Note that the reference is not a complete `nginx.conf` file, it should fit within your existing configuration or be wrapped in a http block directive:
 
 ```
@@ -126,12 +120,12 @@ In the example `nginx.conf`, note the lines referring to the `ssl_certificate_ke
 
 #### Generating a Custom Certificate
 
-You can generate a custom certificate using [mkcert](https://github.com/FiloSottile/mkcert) for `beta.resonate.localhost`. *This origin is whitelisted in our CORS config*.
+You can generate a custom certificate using [mkcert](https://github.com/FiloSottile/mkcert) for `beta.justifay.localhost`. *This origin is whitelisted in our CORS config*.
 
-Generate the certificate (`cert.pem`) and key (`key.pem`) for `beta.resonate.localhost`:
+Generate the certificate (`cert.pem`) and key (`key.pem`) for `beta.justifay.localhost`:
 
 ```sh
-mkcert -key-file key.pem -cert-file cert.pem beta.resonate.localhost
+mkcert -key-file key.pem -cert-file cert.pem beta.justifay.localhost
 ```
 
 In your nginx.conf file, update the `ssl_certificate_key` and the `ssl_certificate_key` to refer to your new key and certificate files.
@@ -141,14 +135,14 @@ In your nginx.conf file, update the `ssl_certificate_key` and the `ssl_certifica
 Update your hosts file to include:
 
 ```
-127.0.0.1       beta.resonate.localhost
+127.0.0.1       beta.justifay.localhost
 ```
 
 #### Update on your .env file
 
 ```sh
-APP_DOMAIN=beta.resonate.localhost
-APP_HOST=https://beta.resonate.localhost
+APP_DOMAIN=beta.justifay.localhost
+APP_HOST=https://beta.justifay.localhost
 ```
 
 #### Run the app!
@@ -156,16 +150,16 @@ APP_HOST=https://beta.resonate.localhost
 ```sh
 npm run dev
 ```
-You should now see the player running on https://beta.resonate.localhost or
+You should now see the player running on https://beta.justifay.localhost or
 
 ## Development
 
 ### API
 
-If you want to build on the API for personal use, consider checking the [backlog in our community forum](https://community.resonate.is/c/platform/52).
+If you want to build on the API for personal use, consider checking the [backlog in our community forum](https://community.justifay.is/c/platform/52).
 The Tracks API repo is currently private, but you may ask for access in the forum.
 
-The Swagger API documentation is currently in flux and split across the [Resonate Search API](https://api.resonate.coop/v2/docs) (see the top right corner for the different services) and [Resonate Service Documentation: User](https://api.resonate.ninja/#/).
+The Swagger API documentation is currently in flux and split across the [Justifay Search API](https://api.justifay.coop/v2/docs) (see the top right corner for the different services) and [Justifay Service Documentation: User](https://api.justifay.ninja/#/).
 
 ### Other Commands
 
@@ -173,9 +167,9 @@ The Swagger API documentation is currently in flux and split across the [Resonat
 
 Installing one of the monorepo packages into one of the other ones is as easy as this:
 ```sh
-npm install @resonate/button --workspace "beta"
+npm install @justifay/button --workspace "beta"
 ```
-This installs `@resonate/button` into the `beta` package.
+This installs `@justifay/button` into the `beta` package.
 
 ### Add a dev dependency
 
@@ -194,7 +188,7 @@ npm run build
 To compile a specific package
 
 ```sh
-npm run build --workspace "@resonate/rangeslider"
+npm run build --workspace "@justifay/rangeslider"
 ```
 
 ## Testing
@@ -208,13 +202,13 @@ npm test
 Test a specific component
 
 ```sh
-npm run test --workspace "@resonate/player-component"
+npm run test --workspace "@justifay/player-component"
 ```
 
 A package can have browser tests (tape-run)
 
 ```sh
-npm run test:browser --workspace "@resonate/api-factory-generator"
+npm run test:browser --workspace "@justifay/api-factory-generator"
 ```
 
 ## Commands
@@ -233,8 +227,8 @@ It can also be handy to install the [pre-commit hook](https://pre-commit.com/) (
 
 ## Maintainers
 
-- Augustin Godiscal <auggod@resonate.is>
-- Marie <marie@resonate.is>
+- Augustin Godiscal <auggod@justifay.is>
+- Marie <marie@justifay.is>
 
 ## See Also
 - [choo](https://github.com/choojs/choo) - sturdy 4kb frontend framework

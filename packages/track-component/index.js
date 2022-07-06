@@ -1,16 +1,16 @@
 const { isBrowser } = require('browser-or-node')
-const imagePlaceholder = require('@resonate/svg-image-placeholder')
+const imagePlaceholder = require('@justifay/svg-image-placeholder')
 const html = require('nanohtml')
 const Component = require('nanocomponent')
 const nanologger = require('nanologger')
 const morph = require('nanomorph')
 const nanostate = require('nanostate')
-const PlayCount = require('@resonate/play-count')
-const MenuButtonOptions = require('@resonate/menu-button-options-component')
-const icon = require('@resonate/icon-element')
-const renderCounter = require('@resonate/counter')
-const { iconFill, text } = require('@resonate/theme-skins')
-const TimeElement = require('@resonate/time-element')
+const PlayCount = require('@justifay/play-count')
+const MenuButtonOptions = require('@justifay/menu-button-options-component')
+const icon = require('@justifay/icon-element')
+const renderCounter = require('@justifay/counter')
+const { iconFill, text } = require('@justifay/theme-skins')
+const TimeElement = require('@justifay/time-element')
 
 class Track extends Component {
   constructor (id, state, emit) {
@@ -171,7 +171,7 @@ class Track extends Component {
         data: Object.assign({}, this.local.track, {
           count: this.local.count,
           favorite: this.local.favorite || this.local.fav,
-          url: new URL(`/track/${this.local.track.id}`, process.env.APP_HOST || 'https://stream.resonate.coop')
+          url: new URL(`/track/${this.local.track.id}`, process.env.APP_HOST || 'https://stream.justifay.coop')
         }),
         size,
         orientation: 'bottomright'

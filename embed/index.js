@@ -1,5 +1,5 @@
 const choo = require('choo')
-const plugins = require('@resonate/choo-plugins')
+const plugins = require('@justifay/choo-plugins')
 const app = choo()
 
 if (process.env.NODE_ENV !== 'production') {

@@ -3,8 +3,8 @@ const compare = require('nanocomponent/compare')
 const html = require('choo/html')
 const morph = require('nanomorph')
 const clone = require('shallow-clone')
-const icon = require('@resonate/icon-element')
-const { foreground: fg, bordersInvert: borders } = require('@resonate/theme-skins')
+const icon = require('@justifay/icon-element')
+const { foreground: fg, bordersInvert: borders } = require('@justifay/theme-skins')
 
 class Notifications extends Component {
   constructor (id, state, emit) {

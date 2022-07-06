@@ -1,6 +1,6 @@
-import Player from '@resonate/player-component'
+import Player from '@justifay/player-component'
 import Header from '../components/header'
-import { background } from '@resonate/theme-skins'
+import { background } from '@justifay/theme-skins'
 import { View } from '../views/main'
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires

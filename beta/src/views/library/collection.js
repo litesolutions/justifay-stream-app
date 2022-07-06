@@ -1,5 +1,5 @@
 const html = require('choo/html')
-const Playlist = require('@resonate/playlist-component')
+const Playlist = require('@justifay/playlist-component')
 const Pagination = require('../../components/pagination')
 const viewLayout = require('../../layouts/library')
 

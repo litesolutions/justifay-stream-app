@@ -1,32 +1,32 @@
-# @resonate/tachyons
+# @justifay/tachyons
 
-A fork of the `tachyons-custom` css library used to style templates and components for Resonate branded user interfaces, such as `stream2own`.
+A fork of the `tachyons-custom` css library used to style templates and components for Justifay branded user interfaces, such as `stream2own`.
 See configuration below for usage with postcss.
 
 ## Install
 
 ```sh
-npm install --save @resonate/tachyons
+npm install --save @justifay/tachyons
 ```
 
 ## How to use
-We can import `@resonate/tachyons` into our front-end application by simply importing the package into a normal CSS file:
+We can import `@justifay/tachyons` into our front-end application by simply importing the package into a normal CSS file:
 ```css
-@import '@resonate/tachyons';
+@import '@justifay/tachyons';
 ```
 
 ## Using the library
-Using `@resonate/tachyons` is the same as using the standard `tachyons` library. For introductory documentation as to how use `tachyons`, you can head to [the tachyons website](https://tachyons.io/).
+Using `@justifay/tachyons` is the same as using the standard `tachyons` library. For introductory documentation as to how use `tachyons`, you can head to [the tachyons website](https://tachyons.io/).
 
-`@resonate/tachyons` modifies a handful of pre-existing CSS classes from `tachyons`, and also adds several more:
+`@justifay/tachyons` modifies a handful of pre-existing CSS classes from `tachyons`, and also adds several more:
 
 ### Colors
-`@resonate/tachyons` changes 7 color classes. Their class names are the same, but their values have been updated:
+`@justifay/tachyons` changes 7 color classes. Their class names are the same, but their values have been updated:
 
-![resonate tachyons colors](images/colors.png)
+![justifay tachyons colors](images/colors.png)
 
 ### Typography
-Font sizing with `@resonate/tachyons` works somewhat differently than it does with regular `tachyons`.
+Font sizing with `@justifay/tachyons` works somewhat differently than it does with regular `tachyons`.
 
 Using `tachyons`, developers can specify which font size to use at different breakpoints using class modifiers. For example, if we wanted to style a `<div>` to render font size `f1` on desktop, `f2` on tablets, and `f3` on mobile, we would write:
 
@@ -36,7 +36,7 @@ Using `tachyons`, developers can specify which font size to use at different bre
 </div>
 ```
 
-However, with `@resonate/tachyons` developers only have to specify one class name to adhere to Resonate's typography design system. That element's `font-size` will then change automatically over different breakpoints:
+However, with `@justifay/tachyons` developers only have to specify one class name to adhere to Justifay's typography design system. That element's `font-size` will then change automatically over different breakpoints:
 
 ```html
 <div class="f2">
@@ -45,12 +45,12 @@ However, with `@resonate/tachyons` developers only have to specify one class nam
 ```
 
 ### Overriding fonts
-On rare occasions when you need to override a particular `font-size`, the currently suggested method is to create a `sheetify` class that would override the `font-size` variable at a chosen breakpoint. Note that because `@resonate/tachyons`' font classes also include `letter-spacing` properties, you may also need to override this property too.
+On rare occasions when you need to override a particular `font-size`, the currently suggested method is to create a `sheetify` class that would override the `font-size` variable at a chosen breakpoint. Note that because `@justifay/tachyons`' font classes also include `letter-spacing` properties, you may also need to override this property too.
 
 ### Spacing
-`@resonate/tachyons` still uses the same padding and margin classes as `tachyons` (eg. `.ma0`, `.mr2`, `.pa4`), however the variables used to calculate each class have changed.
+`@justifay/tachyons` still uses the same padding and margin classes as `tachyons` (eg. `.ma0`, `.mr2`, `.pa4`), however the variables used to calculate each class have changed.
 
-`@resonate/tachyons` uses the following spacing variables:
+`@justifay/tachyons` uses the following spacing variables:
 ```
 --spacing-extra-small: 0.533rem;
 --spacing-small: 0.867rem;
@@ -64,7 +64,7 @@ On rare occasions when you need to override a particular `font-size`, the curren
 ***(Important! These variables may be subject to change.)***
 
 ### Fills
-`@resonate/tachyons` adds several classes that allow developers to set a `fill` property on template elements. Using the color variables from earlier, here's a list of available `fill` classes:
+`@justifay/tachyons` adds several classes that allow developers to set a `fill` property on template elements. Using the color variables from earlier, here's a list of available `fill` classes:
 
 ```css
 .fill-black {      fill: var(--black); }

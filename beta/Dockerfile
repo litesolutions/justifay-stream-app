@@ -2,7 +2,7 @@ ARG RELEASE_TAG=development
 ARG API_DOMAIN=stream.justifay.com
 ARG APP_HOST=https://stream.justifay.com
 ARG OAUTH_HOST=https://id.justifay.com
-ARG STATIC_HOSTNAME=dash.resonate.coop
+ARG STATIC_HOSTNAME=dash.justifay.coop
 ARG API_BASE=/api
 ARG NODE_ENV=development
 

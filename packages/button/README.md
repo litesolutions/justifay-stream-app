@@ -1,18 +1,18 @@
-# @resonate/button
+# @justifay/button
 
 Render an HTML button element
 
 ## Install
 
 ```sh
-$ npm i --save @resonate/button
+$ npm i --save @justifay/button
 ```
 
 ## Usage
 
 ```js
 
-const button = require('@resonate/button')
+const button = require('@justifay/button')
 
 const myButton = button({
   style: 'blank',
@@ -37,7 +37,7 @@ document.body.appendChild(myButton)
 - `disabled` Button disabled state (default is false)
 - `style` Button style (default, blank)
 - `iconName` SVG icon name
-- `iconFill` Class names for svg icon fills (see: @resonate/theme-skins)
+- `iconFill` Class names for svg icon fills (see: @justifay/theme-skins)
 - `iconSize` SVG icon size (xs, sm, md, lg)
 - `text` Button text
 
@@ -47,4 +47,4 @@ MIT
 
 ## Author(s)
 
-- Augustin Godiscal <auggod@resonate.is>
+- Augustin Godiscal <auggod@justifay.is>

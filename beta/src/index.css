@@ -1,9 +1,9 @@
-@import '@resonate/tachyons';
+@import '@justifay/tachyons';
 
 @import './components/profiles/index.css';
 @import './components/trackgroups/index.css';
 @import './components/notifications/index.css';
-@import '@resonate/search-component/index.css';
+@import '@justifay/search-component/index.css';
 @import './components/charts/index.css';
 @import './components/theme-switcher/index.css';
 @import './components/header/index.css';

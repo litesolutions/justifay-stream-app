@@ -1,5 +1,5 @@
 {
-  "name": "@resonate/grid",
+  "name": "@justifay/grid",
   "version": "1.0.0",
   "description": "Render a grid element",
   "main": "index.js",
@@ -12,11 +12,11 @@
   "publishConfig": {
     "access": "public"
   },
-  "author": "Augustin Godiscal <auggod@resonate.is>",
-  "repository": "resonatecoop/stream",
+  "author": "Augustin Godiscal <auggod@justifay.is>",
+  "repository": "justifaycoop/stream",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/resonatecoop/stream/issues"
+    "url": "https://github.com/justifaycoop/stream/issues"
   },
   "dependencies": {
     "choo": "^7.1.0",

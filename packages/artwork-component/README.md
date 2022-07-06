@@ -1,9 +1,9 @@
-# @resonate/artwork-component
+# @justifay/artwork-component
 
 ## Installation
 
 ```sh
-$ npm i --save @resonate/artwork-component
+$ npm i --save @justifay/artwork-component
 ```
 
 ## License
@@ -12,4 +12,4 @@ MIT
 
 ## Author(s)
 
-- Augustin Godiscal <auggod@resonate.is>
+- Augustin Godiscal <auggod@justifay.is>

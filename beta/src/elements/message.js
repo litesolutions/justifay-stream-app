@@ -1,4 +1,4 @@
-const icon = require('@resonate/icon-element')
+const icon = require('@justifay/icon-element')
 const html = require('choo/html')
 
 module.exports = message

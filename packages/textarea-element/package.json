@@ -1,5 +1,5 @@
 {
-  "name": "@resonate/textarea-element",
+  "name": "@justifay/textarea-element",
   "version": "1.0.0",
   "description": "Render textarea html element",
   "main": "index.js",
@@ -15,13 +15,13 @@
     "access": "public"
   },
   "bugs": {
-    "url": "https://github.com/resonatecoop/stream2own/issues"
+    "url": "https://github.com/justifaycoop/stream2own/issues"
   },
-  "author": "Augustin Godiscal <auggod@resonate.is>",
-  "repository": "resonatecoop/stream2own",
+  "author": "Augustin Godiscal <auggod@justifay.is>",
+  "repository": "justifaycoop/stream2own",
   "license": "MIT",
   "dependencies": {
-    "@resonate/theme-skins": "^1.1.2",
+    "@justifay/theme-skins": "^1.1.2",
     "classnames": "^2.3.1",
     "nanohtml": "^1.8.1"
   }

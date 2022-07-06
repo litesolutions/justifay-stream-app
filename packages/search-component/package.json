@@ -1,5 +1,5 @@
 {
-  "name": "@resonate/search-component",
+  "name": "@justifay/search-component",
   "version": "1.1.0",
   "description": "Search component",
   "main": "index.js",
@@ -7,21 +7,21 @@
   "scripts": {
     "test": "eslint . && dependency-check ."
   },
-  "repository": "resonatecoop/stream",
+  "repository": "justifaycoop/stream",
   "publishConfig": {
     "access": "public"
   },
   "bugs": {
-    "url": "https://github.com/resonatecoop/stream/issues"
+    "url": "https://github.com/justifaycoop/stream/issues"
   },
   "keywords": [],
-  "author": "Augustin Godiscal <auggod@resonate.is>",
+  "author": "Augustin Godiscal <auggod@justifay.is>",
   "license": "MIT",
   "dependencies": {
-    "@resonate/api-service": "^1.0.0",
-    "@resonate/button": "^2.0.0",
-    "@resonate/icon-element": "^1.4.0",
-    "@resonate/theme-skins": "^1.1.2",
+    "@justifay/api-service": "^1.0.0",
+    "@justifay/button": "^2.0.0",
+    "@justifay/icon-element": "^1.4.0",
+    "@justifay/theme-skins": "^1.1.2",
     "nanocomponent": "^6.6.0",
     "nanohtml": "^1.9.1",
     "nanomorph": "^5.4.3",
