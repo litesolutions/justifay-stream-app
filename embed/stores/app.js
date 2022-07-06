@@ -242,7 +242,7 @@ function store (state, emitter) {
             <div>
               <p class="lh-copy f4 pa3">
                 You are previewing Resonate.<br>
-                <a href="https://resonate.is/join" target="_blank" rel="noopener">Join now</a> and earn free credits.</p>
+                <a href="https://justifay.com/#sumate" target="_blank" rel="noopener">Join now</a> and earn free credits.</p>
             </div>
           `,
           onClose: function (e) {
