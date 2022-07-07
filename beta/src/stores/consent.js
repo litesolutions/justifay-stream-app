@@ -47,7 +47,7 @@ module.exports = () => {
         prefix: 'dialog-default dialog--sm',
         content: html`
           <div class="flex flex-column">
-            <h3 class="fw1 f4 lh-title">Disabling cookies.</h3>
+            <h3 class="fw1 f4 lh-title">Cookies.</h3>
 
             <p class="lh-copy f5 b">Functional cookies are enabled by default.</p>
 
@@ -57,7 +57,6 @@ module.exports = () => {
 
             <div class="flex flex-auto items-center justify-center mr5-l">
               <div class="mr4 mr2-l">
-                ${button({ size: 'none', theme: 'light', outline: true, type: 'submit', value: 'deny', text: 'Deny all' })}
               </div>
               <div>
                 ${button({ size: 'none', theme: 'light', outline: true, type: 'submit', value: 'allow', text: 'Allow all' })}
@@ -67,14 +66,6 @@ module.exports = () => {
             <h3 class="fw1 f4 lh-title">Third party cookies.</h3>
 
             <p class="lh-copy f5">We currently don't make any use of third party tracking tools or analytics.</p>
-
-            <h3 class="fw1 f4 lh-title">Analytics (self hosted offen instance)</h3>
-
-            <p class="lh-copy f5">We only access usage data with your consent. You can opt out and delete any time. Usage data may be periodically purged.</p>
-
-            <h3 class="fw1 f4 lh-title">Stripe</h3>
-
-            <p class="lh-copy f5">If you're topping up credits, you should understand payments are processed by Stripe.</p>
           </div>
         `,
         onClose: function (e) {
