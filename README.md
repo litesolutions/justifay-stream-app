@@ -150,7 +150,7 @@ You should now see the player running on https://beta.justifay.localhost or
 If you want to build on the API for personal use, consider checking the [backlog in our community forum](https://community.justifay.is/c/platform/52).
 The Tracks API repo is currently private, but you may ask for access in the forum.
 
-The Swagger API documentation is currently in flux and split across the [Justifay Search API](https://api.justifay.coop/v2/docs) (see the top right corner for the different services) and [Justifay Service Documentation: User](https://api.justifay.ninja/#/).
+The Swagger API documentation is currently in flux and split across the [Justifay Search API](https://stream.justifay.com/api/docs) (see the top right corner for the different services) and [Justifay Service Documentation: User](https://api.justifay.com/#/).
 
 ### Other Commands
 
