@@ -1,30 +1,21 @@
 <div align="center">
-  <h1 align="center">stream2own</h1>
-  <strong>Play fair.</strong>
+  <h1 align="center">Justifay Player</h1>
 </div>
 
 <br />
 
 <div align="center">
   <h3>
-    <a href="https://justifay.is">
+    <a href="https://justifay.com">
       Website
     </a>
     <span> | </span>
-    <a href="https://www.twitter.com/justifaycoop/">
+    <a href="https://twitter.com/justifaymusica">
       Twitter
     </a>
     <span> | </span>
-    <a href="https://github.com/justifaycoop/stream2own/blob/master/CONTRIBUTING.md">
+    <a href="https://github.com/litesolutions/justifay-stream-app/blob/master/CONTRIBUTING.md">
       Contributing
-    </a>
-    <span> | </span>
-    <a href="https://community.justifay.is/t/dev-volunteers-needed-to-build-the-justifay-ecosystem/2262">
-      Developer Guide
-    </a>
-    <span> | </span>
-    <a href="https://docs.justifay.coop">
-      Justifay Docs
     </a>
   </h3>
 </div>
