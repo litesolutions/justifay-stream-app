@@ -19,11 +19,11 @@ function renderDiscover (state, emit) {
           Owned and run by members.
         </h2>
 
-        ${!state.user.uid
+        ${!state.user.id
           ? html`
               <a
                 class="link pv2 ph3 ttu ba b--mid-gray b--dark-gray--dark f6 b"
-                href="https://justifay.coop/join"
+                href="https://id.justifay.com/join"
               >
                 Join now
               </a>
