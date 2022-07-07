@@ -62,7 +62,7 @@ const APIServiceClient = (options) => {
 
 /**
  * @description Get swagger api definition with auth
- * @param {String} token Justifay User Token
+ * @param {String} token Resonate User Token
  */
 const APIServiceClientWithAuth = (options) => {
   return (token, prefix = 'user') => {

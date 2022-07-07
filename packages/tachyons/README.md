@@ -1,6 +1,6 @@
 # @justifay/tachyons
 
-A fork of the `tachyons-custom` css library used to style templates and components for Justifay branded user interfaces, such as `stream2own`.
+A fork of the `tachyons-custom` css library used to style templates and components for Resonate branded user interfaces, such as `stream2own`.
 See configuration below for usage with postcss.
 
 ## Install
@@ -36,7 +36,7 @@ Using `tachyons`, developers can specify which font size to use at different bre
 </div>
 ```
 
-However, with `@justifay/tachyons` developers only have to specify one class name to adhere to Justifay's typography design system. That element's `font-size` will then change automatically over different breakpoints:
+However, with `@justifay/tachyons` developers only have to specify one class name to adhere to Resonate's typography design system. That element's `font-size` will then change automatically over different breakpoints:
 
 ```html
 <div class="f2">
