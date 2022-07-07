@@ -1,4 +1,4 @@
-# [WIP] Justifay schemas (v2 api)
+# [WIP] Resonate schemas (v2 api)
 
 All our schemas
 

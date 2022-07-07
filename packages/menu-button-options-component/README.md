@@ -1,6 +1,6 @@
 # Menu button options component
 
-Justifay menu button options component.
+Resonate menu button options component.
 
 Will trigger a `menu-button` on desktop and a `dialog` on smaller screens. The reasoning is that while the menu button works well on desktop, on mobile it's not the case. The menu button can appear off screen and we need to determine a position direction. Othewise, we would need to recenter the view which may not be a better solution.
 
@@ -19,7 +19,7 @@ npm install --save @justifay/menu-button-options-component
     selection: ['share', 'link', 'embed'], // the list of menu items you want
     data: {
       image: // some custom image src,
-      title: 'Justifay',
+      title: 'Resonate',
       text: 'Stream fair',
       url: 'https://justifay.coop',
       id: 144,
