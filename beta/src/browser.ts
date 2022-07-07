@@ -1,6 +1,6 @@
 /* global localStorage */
 import { isBrowser } from 'browser-or-node'
-import plugins from '@resonate/choo-plugins'
+import plugins from '@justifay/choo-plugins'
 import Choo from 'choo'
 import devtools from 'choo-devtools'
 import serviceworker from 'choo-service-worker'

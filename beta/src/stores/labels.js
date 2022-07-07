@@ -4,7 +4,7 @@ const setTitle = require('../lib/title')
 const Profiles = require('../components/profiles')
 const Discography = require('../components/discography')
 const setLoaderTimeout = require('../lib/loader-timeout')
-const { getAPIServiceClient, getAPIServiceClientWithAuth } = require('@resonate/api-service')({
+const { getAPIServiceClient, getAPIServiceClientWithAuth } = require('@justifay/api-service')({
   apiHost: process.env.APP_HOST,
   base: process.env.API_BASE || '/api/v3'
 })
@@ -445,10 +445,10 @@ function labels () {
         'og:description': description,
         'og:title': setTitle(title),
         'og:type': 'website',
-        'og:url': 'https://beta.stream.resonate.coop' + state.href,
+        'og:url': 'https://beta.stream.justifay.coop' + state.href,
         'twitter:card': 'summary_large_image',
         'twitter:description': description,
-        'twitter:site': '@resonatecoop',
+        'twitter:site': '@justifaycoop',
         'twitter:title': setTitle(title)
       }
 
@@ -532,7 +532,7 @@ async function fetchLabelAlbums (labelID, pageNumber) {
         }
       ],
       track: trackListItem,
-      url: trackListItem.url || `https://api.resonate.is/v1/stream/${trackListItem.id}`
+      url: trackListItem.url || `https://api.justifay.is/v1/stream/${trackListItem.id}`
     }))
   }))
 
@@ -570,7 +570,7 @@ async function fetchLabelReleases (labelID, pageNumber) {
         }
       ],
       track: trackListItem.track,
-      url: trackListItem.track.url || `https://api.resonate.is/v1/stream/${trackListItem.track.id}`
+      url: trackListItem.track.url || `https://api.justifay.is/v1/stream/${trackListItem.track.id}`
     }))
   }))
 

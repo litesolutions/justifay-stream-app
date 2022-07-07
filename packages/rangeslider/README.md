@@ -13,10 +13,10 @@ Check out the [examples](http://stryzhevskyi.github.io/rangeSlider/).
 
 ## Install
 
-Install with [npm](https://www.npmjs.com/package/@resonate/rangeslider):
+Install with [npm](https://www.npmjs.com/package/@justifay/rangeslider):
 
 ```sh
-npm i --save @resonate/rangeslider
+npm i --save @justifay/rangeslider
 ```
 
 ## Usage
@@ -73,7 +73,7 @@ slider.rangeSlider.update({min : 0, max : 20, step : 0.5, value : 1.5, buffer : 
 
 ## Changelog
 
-### 1.0.0 (Resonate fork)
+### 1.0.0 (Justifay fork)
 
 * Replaced webpack build with babel build
 * Removed css (include it yourself in your project)

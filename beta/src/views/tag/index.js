@@ -1,7 +1,7 @@
 const html = require('choo/html')
 const viewLayout = require('../../layouts/search')
-const icon = require('@resonate/icon-element')
-const imagePlaceholder = require('@resonate/svg-image-placeholder')
+const icon = require('@justifay/icon-element')
+const imagePlaceholder = require('@justifay/svg-image-placeholder')
 const { isNode } = require('browser-or-node')
 const card = require('../../components/profiles/card')
 const Pagination = require('../../components/pagination')
@@ -66,7 +66,7 @@ function TagView () {
     function renderResults (state) {
       return html`
         <div>
-          <a target="_blank" href="https://community.resonate.is/tag/${state.query.term}">Join the conversation.</a>
+          <a target="_blank" href="https://community.justifay.is/tag/${state.query.term}">Join the conversation.</a>
           <ul class="list ma0 pa0 pv2 flex flex-wrap mw7">
         ${relatedTags.map(relatedTags => {
           const href = `/tag?term=${relatedTags}`

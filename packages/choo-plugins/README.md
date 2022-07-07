@@ -1,6 +1,6 @@
-# @resonate/choo-plugins
+# @justifay/choo-plugins
 
-Library for all choo plugins in resonate frontend projects
+Library for all choo plugins in justifay frontend projects
 
 - Full screen
 - Gestures
@@ -13,14 +13,14 @@ Library for all choo plugins in resonate frontend projects
 ## Installation
 
 ```sh
-$ npm i --save @resonate/choo-plugins
+$ npm i --save @justifay/choo-plugins
 ```
 
 ## Usage
 
 ```javascript
 
-  const { offlineDetect: offlineDetectPlugin } = require('@resonate/choo-plugins')
+  const { offlineDetect: offlineDetectPlugin } = require('@justifay/choo-plugins')
 
   const app = choo()
 
@@ -34,4 +34,4 @@ MIT
 
 ## Author(s)
 
-- Augustin Godiscal <auggod@resonate.is>
+- Augustin Godiscal <auggod@justifay.is>

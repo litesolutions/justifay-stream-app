@@ -1,9 +1,9 @@
 const setTitle = require('../lib/title')
-const Playlist = require('@resonate/playlist-component')
+const Playlist = require('@justifay/playlist-component')
 const List = require('../components/trackgroups')
 const LoaderTimeout = require('../lib/loader-timeout')
 const resolvePlaysAndFavorites = require('../lib/resolve-plays-favorites')
-const { getAPIServiceClient, getAPIServiceClientWithAuth } = require('@resonate/api-service')({
+const { getAPIServiceClient, getAPIServiceClientWithAuth } = require('@justifay/api-service')({
   apiHost: process.env.APP_HOST,
   base: process.env.API_BASE || '/api/v3'
 })
@@ -247,7 +247,7 @@ function playlist () {
                 }
               ],
               track: item.track,
-              url: item.track.url || `https://api.resonate.is/v1/stream/${item.track.id}`
+              url: item.track.url || `https://api.justifay.is/v1/stream/${item.track.id}`
             }
           })
 
@@ -299,7 +299,7 @@ function playlist () {
         title: setTitle(title),
         'twitter:card': 'summary_large_image',
         'twitter:title': setTitle(title),
-        'twitter:site': '@resonatecoop'
+        'twitter:site': '@justifaycoop'
       })
     }
   }

@@ -1,6 +1,6 @@
 const Component = require('choo/component')
 const html = require('choo/html')
-const button = require('@resonate/button')
+const button = require('@justifay/button')
 const nanostate = require('nanostate')
 
 class FeaturedLabel extends Component {

@@ -1,6 +1,6 @@
 const html = require('choo/html')
-const icon = require('@resonate/icon-element')
-const { background: bg } = require('@resonate/theme-skins')
+const icon = require('@justifay/icon-element')
+const { background: bg } = require('@justifay/theme-skins')
 
 const items = [
   { href: '/artists', text: 'Artists' },

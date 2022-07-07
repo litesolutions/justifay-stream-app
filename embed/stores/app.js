@@ -10,8 +10,8 @@ const generateApi = require('../lib/api')
 // v2 api docs
 const SwaggerClient = require('swagger-client')
 
-const Dialog = require('@resonate/dialog-component')
-const Playlist = require('@resonate/playlist-component')
+const Dialog = require('@justifay/dialog-component')
+const Playlist = require('@justifay/playlist-component')
 
 module.exports = store
 
@@ -44,7 +44,7 @@ function store (state, emitter) {
 
   emitter.on('route:embed/track/:id', async () => {
     try {
-      const url = new URL('/api/v3/tracks/apiDocs', process.env.APP_HOST || 'https://stream.resonate.coop')
+      const url = new URL('/api/v3/tracks/apiDocs', process.env.APP_HOST || 'https://stream.justifay.coop')
 
       url.search = new URLSearchParams({
         type: 'apiDoc',
@@ -90,7 +90,7 @@ function store (state, emitter) {
     machine.emit('start')
 
     try {
-      let url = new URL('/api/v3/resolve/apiDocs', process.env.APP_HOST || 'https://stream.resonate.coop')
+      let url = new URL('/api/v3/resolve/apiDocs', process.env.APP_HOST || 'https://stream.justifay.coop')
 
       url.search = new URLSearchParams({
         type: 'apiDoc',
@@ -99,10 +99,10 @@ function store (state, emitter) {
 
       let client = await new SwaggerClient(url.href)
 
-      url = new URL(state.href.replace('/embed', '') || '/', process.env.APP_HOST || 'https://stream.resonate.coop')
+      url = new URL(state.href.replace('/embed', '') || '/', process.env.APP_HOST || 'https://stream.justifay.coop')
       let response = await client.apis.resolve.resolve({ url: url.href })
 
-      url = new URL('/api/v3/trackgroups/apiDocs', process.env.APP_HOST || 'https://stream.resonate.coop')
+      url = new URL('/api/v3/trackgroups/apiDocs', process.env.APP_HOST || 'https://stream.justifay.coop')
 
       url.search = new URLSearchParams({
         type: 'apiDoc',
@@ -123,7 +123,7 @@ function store (state, emitter) {
             item
           ],
           track: item.track,
-          url: item.track.url || `https://api.resonate.is/v1/stream/${item.track.id}`
+          url: item.track.url || `https://api.justifay.is/v1/stream/${item.track.id}`
         }
       })
 
@@ -160,7 +160,7 @@ function store (state, emitter) {
     machine.emit('start')
 
     try {
-      let url = new URL('/api/v3/resolve/apiDocs', process.env.APP_HOST || 'https://stream.resonate.coop')
+      let url = new URL('/api/v3/resolve/apiDocs', process.env.APP_HOST || 'https://stream.justifay.coop')
 
       url.search = new URLSearchParams({
         type: 'apiDoc',
@@ -169,10 +169,10 @@ function store (state, emitter) {
 
       let client = await new SwaggerClient(url.href)
 
-      url = new URL(state.href.replace('/embed', '') || '/', process.env.APP_HOST || 'https://stream.resonate.coop')
+      url = new URL(state.href.replace('/embed', '') || '/', process.env.APP_HOST || 'https://stream.justifay.coop')
       let response = await client.apis.resolve.resolve({ url: url.href })
 
-      url = new URL('/api/v3/trackgroups/apiDocs', process.env.APP_HOST || 'https://stream.resonate.coop')
+      url = new URL('/api/v3/trackgroups/apiDocs', process.env.APP_HOST || 'https://stream.justifay.coop')
 
       url.search = new URLSearchParams({
         type: 'apiDoc',
@@ -193,7 +193,7 @@ function store (state, emitter) {
             item
           ],
           track: item.track,
-          url: item.track.url || `https://api.resonate.is/v1/stream/${item.track.id}`
+          url: item.track.url || `https://api.justifay.is/v1/stream/${item.track.id}`
         }
       })
 
@@ -234,15 +234,15 @@ function store (state, emitter) {
       const dialog = document.body.querySelector('dialog')
 
       if (!dialog) {
-        const dialogComponent = state.cache(Dialog, 'join-resonate')
+        const dialogComponent = state.cache(Dialog, 'join-justifay')
 
         const dialogEl = dialogComponent.render({
           prefix: 'dialog-bottom bg-white black',
           content: html`
             <div>
               <p class="lh-copy f4 pa3">
-                You are previewing Resonate.<br>
-                <a href="https://resonate.is/join" target="_blank" rel="noopener">Join now</a> and earn free credits.</p>
+                You are previewing Justifay.<br>
+                <a href="https://justifay.is/join" target="_blank" rel="noopener">Join now</a> and earn free credits.</p>
             </div>
           `,
           onClose: function (e) {

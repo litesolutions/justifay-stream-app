@@ -7,7 +7,7 @@ const faq = [
     items: [
       {
         question: 'Why can\'t I listen to more than 45 seconds of a track?',
-        answer: 'When not logged in, you are using Resonate in preview mode. <a href="https://resonate.is/join/" target="_blank">Create an account</a> and log in to listen to full tracks. If you are logged in and still can’t hear full tracks, you are likely out of listening credits. You can purchase more via your user menu.'
+        answer: 'When not logged in, you are using Justifay in preview mode. <a href="https://justifay.is/join/" target="_blank">Create an account</a> and log in to listen to full tracks. If you are logged in and still can’t hear full tracks, you are likely out of listening credits. You can purchase more via your user menu.'
       },
       {
         question: 'Search by tag',
@@ -17,10 +17,10 @@ const faq = [
 
           <p>Examples:</p>
           <ul>
-            <li><a href="https://beta.stream.resonate.coop/tag?term=hiphop">#hiphop</a></li>
-            <li><a href="https://beta.stream.resonate.coop/tag?term=chiptune">#chiptune</a></li>
-            <li><a href="https://beta.stream.resonate.coop/tag?term=singersongwriter">#singersongwriter</a></li>
-            <li><a href="https://beta.stream.resonate.coop/tag?term=deephouse">#deephouse</a></li>
+            <li><a href="https://beta.stream.justifay.coop/tag?term=hiphop">#hiphop</a></li>
+            <li><a href="https://beta.stream.justifay.coop/tag?term=chiptune">#chiptune</a></li>
+            <li><a href="https://beta.stream.justifay.coop/tag?term=singersongwriter">#singersongwriter</a></li>
+            <li><a href="https://beta.stream.justifay.coop/tag?term=deephouse">#deephouse</a></li>
           </ul>
         `
       },
@@ -57,7 +57,7 @@ const faq = [
       {
         question: 'Where can I find other users\' playlists?',
         answer: `
-          We're designing a new page for browsing playlists. For now, all user-made public playlists can be <a href="https://stream.resonate.coop/releases?type=playlist">found here</a>.
+          We're designing a new page for browsing playlists. For now, all user-made public playlists can be <a href="https://stream.justifay.coop/releases?type=playlist">found here</a>.
         `
       }
     ]
@@ -66,16 +66,16 @@ const faq = [
     title: 'Listening to music',
     items: [
       {
-        question: 'Can I download music I own on Resonate?',
-        answer: 'In the future, we intend to offer the ability to download tracks that you own on Resonate to your local device. This feature is not yet available.'
+        question: 'Can I download music I own on Justifay?',
+        answer: 'In the future, we intend to offer the ability to download tracks that you own on Justifay to your local device. This feature is not yet available.'
       },
       {
-        question: 'What is Resonate\'s streaming quality?',
+        question: 'What is Justifay\'s streaming quality?',
         answer: 'Our current streaming quality is 96 kbps AAC. In the future we intend to offer 128 bits AAC for all users. 256 bits AAC will be available on demand.'
       },
       {
         question: 'How do I add Credits to my account?',
-        answer: 'Your account comes with a small amount of listening credits as a gift. As you listen to music on Resonate, credits are deducted automatically from your account. You can purchase more credits for your account by opening your user menu. Your user menu can be found at the top right of desktop view or the bottom right of mobile view. Resonate only deducts from the credits you have previously purchased for your account; there are no fees or other charges.'
+        answer: 'Your account comes with a small amount of listening credits as a gift. As you listen to music on Justifay, credits are deducted automatically from your account. You can purchase more credits for your account by opening your user menu. Your user menu can be found at the top right of desktop view or the bottom right of mobile view. Justifay only deducts from the credits you have previously purchased for your account; there are no fees or other charges.'
       },
       {
         question: 'How much does 1 listening credit cost?',
@@ -88,7 +88,7 @@ const faq = [
       {
         question: 'How does Stream2own work? How many Credits per play?',
         answer: `
-          <p>Stream2own is Resonate's user-centric payment model. It lets you affordably explore new music while rewarding the artists you love -- without being interruped by transactions, advertisements, and paywalls. For each song, the price per play starts tiny and increases bit by bit, reflecting the unique relationship between each listener and the artists they listen to.
+          <p>Stream2own is Justifay's user-centric payment model. It lets you affordably explore new music while rewarding the artists you love -- without being interruped by transactions, advertisements, and paywalls. For each song, the price per play starts tiny and increases bit by bit, reflecting the unique relationship between each listener and the artists they listen to.
           </p>
           <ul>
             <li>Your purchase of a particular song is split over the first nine times you play it.</li>
@@ -97,7 +97,7 @@ const faq = [
             <li>The ninth play is 0.512 Credits / 0.625 EUR / 0.76 USD.</li>
           </ul>
           <p>
-            After the ninth play of that song, you own it! You can stream that song for free on Resonate as much as you want. All songs you own will appear under the Collection tab inside your Library.
+            After the ninth play of that song, you own it! You can stream that song for free on Justifay as much as you want. All songs you own will appear under the Collection tab inside your Library.
           </p>
         `
       }
@@ -112,23 +112,23 @@ const faq = [
       },
       {
         question: 'I already have a Listener Account. How do I become a member?',
-        answer: 'You can become a Listener Member <a href="https://resonate.is/join/membership/" target="_blank">here</a>.'
+        answer: 'You can become a Listener Member <a href="https://justifay.is/join/membership/" target="_blank">here</a>.'
       },
       {
         question: 'How do I get an Artist Account?',
-        answer: 'Sign up <a href="https://resonate.is/join/" target="_blank">here</a>.'
+        answer: 'Sign up <a href="https://justifay.is/join/" target="_blank">here</a>.'
       },
       {
         question: 'What can I do with an Artist Account?',
-        answer: 'With an Artist Account, you can upload your music to the Resonate Player. An Artist Account is for managing your own music or on behalf of a band or artist you represent.'
+        answer: 'With an Artist Account, you can upload your music to the Justifay Player. An Artist Account is for managing your own music or on behalf of a band or artist you represent.'
       },
       {
-        question: 'How do I upload music to Resonate?',
-        answer: 'Once it is ready, our new Artist Dashboard will put the upload process under your control. For now, volunteers at Resonate will upload your music for you. To submit music, log in to your Artist Account at <a href="https://resonate.is" target="_blank">https://resonate.is</a>, complete your Artist Profile, and then follow the guidance on the Submitting Music page.'
+        question: 'How do I upload music to Justifay?',
+        answer: 'Once it is ready, our new Artist Dashboard will put the upload process under your control. For now, volunteers at Justifay will upload your music for you. To submit music, log in to your Artist Account at <a href="https://justifay.is" target="_blank">https://justifay.is</a>, complete your Artist Profile, and then follow the guidance on the Submitting Music page.'
       },
       {
         question: 'How do I get a Label Account?',
-        answer: 'We are rebuilding our Label Account infrastructure. Until we’re done, new signups have been paused for Label Accounts. Email <a href="mailto:members@resonate.is">members@resonate.is</a> to be notified when signup is live again.'
+        answer: 'We are rebuilding our Label Account infrastructure. Until we’re done, new signups have been paused for Label Accounts. Email <a href="mailto:members@justifay.is">members@justifay.is</a> to be notified when signup is live again.'
       },
       {
         question: 'As a small label of a few artists, do I have to wait for Label Account signup to be re-enabled? Can I sign up our artists now by creating and managing multiple Artist Accounts?',
@@ -140,7 +140,7 @@ const faq = [
       },
       {
         question: 'Can I change my account type later?',
-        answer: 'Yes. To change an existing Listener Account to an Artist Account, visit this page. For changes between other account types, contact <a href="mailto:members@resonate.is">members@resonate.is</a>. Note, changing an account type will not automatically change a previously registered membership.'
+        answer: 'Yes. To change an existing Listener Account to an Artist Account, visit this page. For changes between other account types, contact <a href="mailto:members@justifay.is">members@justifay.is</a>. Note, changing an account type will not automatically change a previously registered membership.'
       }
     ]
   },
@@ -149,23 +149,23 @@ const faq = [
     items: [
       {
         question: 'How do I change my password',
-        answer: '<a href="https://resonate.is/account-settings/password/" target="_blank">Change your password</a>.'
+        answer: '<a href="https://justifay.is/account-settings/password/" target="_blank">Change your password</a>.'
       },
       {
         question: 'What do I do if I forgot my password?',
-        answer: 'If you can\'t remember your password, you can <a href="https://resonate.is/password-reset" target="_blank">request a new password from our website</a>.'
+        answer: 'If you can\'t remember your password, you can <a href="https://justifay.is/password-reset" target="_blank">request a new password from our website</a>.'
       },
       {
         question: 'I am having log in issues',
-        answer: 'Before requesting support, make sure that you are using the email associated with your Resonate account. If you are having issues, please request a new password. You may have to wait up to a minute for your new password to become active. Your password might not be accepted if it contains certain non-alphanumerics such as " and . If you have tried requesting a new password and are still having difficulties, please contact us at <a href="mailto:members@resonate.is">members@resonate.is</a> and describe your issue in detail.'
+        answer: 'Before requesting support, make sure that you are using the email associated with your Justifay account. If you are having issues, please request a new password. You may have to wait up to a minute for your new password to become active. Your password might not be accepted if it contains certain non-alphanumerics such as " and . If you have tried requesting a new password and are still having difficulties, please contact us at <a href="mailto:members@justifay.is">members@justifay.is</a> and describe your issue in detail.'
       },
       {
         question: 'How do I delete my account?',
-        answer: 'You can <a href="https://resonate.is/account-settings/delete/" target="_blank">delete your account</a> and all your data at anytime.'
+        answer: 'You can <a href="https://justifay.is/account-settings/delete/" target="_blank">delete your account</a> and all your data at anytime.'
       },
       {
         question: 'How do I download a copy of my data ?',
-        answer: '<a href="https://resonate.is/account-settings/privacy/" target="_blank">Download or erase your data</a>.'
+        answer: '<a href="https://justifay.is/account-settings/privacy/" target="_blank">Download or erase your data</a>.'
       }
     ]
   },
@@ -174,10 +174,10 @@ const faq = [
     items: [
       {
         question: 'Can I change monetisation settings of my music?',
-        answer: 'Yes, you can toggle any track between monetised (stream2own) or non-monetised (free-to-stream). Currently, these are the two options. To change these settings, contact <a href="mailto:members@resonate.is">members@resonate.is</a>.'
+        answer: 'Yes, you can toggle any track between monetised (stream2own) or non-monetised (free-to-stream). Currently, these are the two options. To change these settings, contact <a href="mailto:members@justifay.is">members@justifay.is</a>.'
       },
       {
-        question: 'As an artist with music on Resonate, how do I receive payouts?',
+        question: 'As an artist with music on Justifay, how do I receive payouts?',
         answer: 'Co-op policy is to make a payment when an artist’s earned credits cross a €10 EUR threshold (about $11.50 USD). We will reach out to you at that time to set up payment details. We are currently building the new Artist Dashboard, where artists will be able to track their plays and payout status.'
       }
     ]
@@ -192,7 +192,7 @@ function renderFaq (state, emit) {
       <section id="faq" class="flex flex-column w-100 ph3 pb6">
         <h1 class="f3 lh-title fw4">Frequently asked questions</h1>
 
-        <p class="measure">If you’d like help and your question isn’t answered here, request an invite to our <a href="https://community.resonate.is">Community Forum</a> where you can meet others, ask questions, and read our co-op Handbook. Resonate is a labor of love by a small community. Your ideas, music, listening and <a href="https://opencollective.com/resonate">donations</a> can help make this everything it can be.</p>
+        <p class="measure">If you’d like help and your question isn’t answered here, request an invite to our <a href="https://community.justifay.is">Community Forum</a> where you can meet others, ask questions, and read our co-op Handbook. Justifay is a labor of love by a small community. Your ideas, music, listening and <a href="https://opencollective.com/justifay">donations</a> can help make this everything it can be.</p>
 
         ${faq.map((item) => {
           return html`

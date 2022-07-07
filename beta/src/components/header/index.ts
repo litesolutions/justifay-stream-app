@@ -1,15 +1,15 @@
 import Component from 'choo/component'
-import icon from '@resonate/icon-element'
+import icon from '@justifay/icon-element'
 import nanostate from 'nanostate'
-import button from '@resonate/button'
-import Dialog from '@resonate/dialog-component'
-import Search from '@resonate/search-component'
-import link from '@resonate/link-element'
+import button from '@justifay/button'
+import Dialog from '@justifay/dialog-component'
+import Search from '@justifay/search-component'
+import link from '@justifay/link-element'
 import ThemeSwitcher from '../theme-switcher'
 import morph from 'nanomorph'
-import imagePlaceholder from '@resonate/svg-image-placeholder'
+import imagePlaceholder from '@justifay/svg-image-placeholder'
 import matchMediaCustom from '../../lib/match-media'
-import { background as bg } from '@resonate/theme-skins'
+import { background as bg } from '@justifay/theme-skins'
 import TAGS from '../../lib/tags'
 import Nanobus from 'nanobus'
 import { AppState } from '../../types'
@@ -263,13 +263,13 @@ class Header extends Component<HeaderProps> {
             <li class="flex flex-auto-l w-100-l justify-center" role="menuitem">
               <ul role="menu" class="${bg} ba bw b--mid-gray b--mid-gray--light b--near-black--dark list ma0 pa0 absolute right-0 dropdown z-999 top-100" style="left:0;width:120px;">
                 <li>
-                  <a class="link db w-100 ph3 pv2 bg-animate hover-bg-light-gray hover-bg-light-gray--light hover-bg-dark-gray--dark" href="https://resonate.coop/about" target="_blank">About</a>
+                  <a class="link db w-100 ph3 pv2 bg-animate hover-bg-light-gray hover-bg-light-gray--light hover-bg-dark-gray--dark" href="https://justifay.coop/about" target="_blank">About</a>
                 </li>
                 <li>
-                  <a class="link db w-100 ph3 pv2 bg-animate hover-bg-light-gray hover-bg-light-gray--light hover-bg-dark-gray--dark" href="https://resonate.coop/pricing" target="_blank">Pricing</a>
+                  <a class="link db w-100 ph3 pv2 bg-animate hover-bg-light-gray hover-bg-light-gray--light hover-bg-dark-gray--dark" href="https://justifay.coop/pricing" target="_blank">Pricing</a>
                 </li>
                 <li>
-                  <a class="link db w-100 ph3 pv2 bg-animate hover-bg-light-gray hover-bg-light-gray--light hover-bg-dark-gray--dark" href="https://resonate.coop/the-coop" target="_blank">The Co-op</a>
+                  <a class="link db w-100 ph3 pv2 bg-animate hover-bg-light-gray hover-bg-light-gray--light hover-bg-dark-gray--dark" href="https://justifay.coop/the-coop" target="_blank">The Co-op</a>
                 </li>
                 <li>
                   <a class="link db w-100 ph3 pv2 bg-animate hover-bg-light-gray hover-bg-light-gray--light hover-bg-dark-gray--dark" href="/faq">FAQ</a>

@@ -6,7 +6,7 @@ const { isNode } = require('browser-or-node')
 const ProfileItem = require('./item')
 const nanostate = require('nanostate')
 const nanologger = require('nanologger')
-const Loader = require('@resonate/play-count-component')
+const Loader = require('@justifay/play-count-component')
 const assert = require('assert')
 const renderMessage = require('../../elements/message')
 

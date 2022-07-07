@@ -1,6 +1,6 @@
 # API factory generator
 
-Project first published as @zerowastemap/api-factory-generator. Forked it to allow more specific configuration for resonate.
+Project first published as @zerowastemap/api-factory-generator. Forked it to allow more specific configuration for justifay.
 
 - Uses fetch
 - Uses ajv for schema validation
@@ -11,19 +11,19 @@ Project first published as @zerowastemap/api-factory-generator. Forked it to all
 ## Installation
 
 ```sh
-$ npm i --save @resonate/api-factory-generator
+$ npm i --save @justifay/api-factory-generator
 ```
 
 ## Usage
 
 ```javascript
 
-const generator = require('@resonate/api-factory-generator')
+const generator = require('@justifay/api-factory-generator')
 
 // set default options for each requests
 const options = {
   mode: 'cors',
-  domain: 'resonate.localhost',
+  domain: 'justifay.localhost',
   scheme: 'https://',
   prefix: '/api',
   version: 1,
@@ -94,4 +94,4 @@ MIT
 
 ## Author(s)
 
-- Augustin Godiscal <auggod@resonate.is>
+- Augustin Godiscal <auggod@justifay.is>

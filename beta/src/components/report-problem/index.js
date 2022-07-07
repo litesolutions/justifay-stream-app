@@ -1,8 +1,8 @@
 const html = require('choo/html')
-const button = require('@resonate/button')
+const button = require('@justifay/button')
 const nanostate = require('nanostate')
 const Component = require('choo/component')
-const Dialog = require('@resonate/dialog-component')
+const Dialog = require('@justifay/dialog-component')
 
 class ReportProblem extends Component {
   constructor (id, state, emit) {
@@ -38,7 +38,7 @@ Current page: ${state.href}
         prefix: 'dialog-default dialog--sm',
         content: html`
           <p>
-            <a href="mailto:members@resonate.is?subject=${subject}&body=${encodedBody}">Write to us</a>
+            <a href="mailto:members@justifay.is?subject=${subject}&body=${encodedBody}">Write to us</a>
           </p>
         `,
         onClose: function (e) {

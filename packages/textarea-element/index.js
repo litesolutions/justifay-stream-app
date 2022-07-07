@@ -1,5 +1,5 @@
 const html = require('nanohtml')
-const { foreground } = require('@resonate/theme-skins')
+const { foreground } = require('@justifay/theme-skins')
 const classnames = require('classnames')
 
 module.exports = (props) => {

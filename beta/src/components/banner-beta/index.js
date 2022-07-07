@@ -2,8 +2,8 @@
 
 const html = require('choo/html')
 const Component = require('choo/component')
-const link = require('@resonate/link-element')
-const icon = require('@resonate/icon-element')
+const link = require('@justifay/link-element')
+const icon = require('@justifay/icon-element')
 
 class Baneer extends Component {
   constructor (id, state, emit) {
@@ -26,7 +26,7 @@ class Baneer extends Component {
           </p>
         </noscript>
         <p class="f5 lh-copy measure pl3">
-          Welcome to the new Beta Player! <a class="link b underline" target="_blank" rel="noopener noreferer" href="https://resonate.is/new-beta-player-update">Read the blog post</a> for all details about this release.
+          Welcome to the new Beta Player! <a class="link b underline" target="_blank" rel="noopener noreferer" href="https://justifay.is/new-beta-player-update">Read the blog post</a> for all details about this release.
         </p>
         <p class="f5 lh-copy pl3">
           Looking for something else ? ${link({
@@ -37,7 +37,7 @@ class Baneer extends Component {
         </p>
         <p class="f5 lh-copy pl3">
           Our team is here to help you. ${link({
-            href: 'https://resonate.is/support',
+            href: 'https://justifay.is/support',
             prefix: 'b',
             text: 'Get support',
             target: '_blank'

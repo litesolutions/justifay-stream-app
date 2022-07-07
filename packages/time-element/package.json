@@ -1,5 +1,5 @@
 {
-  "name": "@resonate/time-element",
+  "name": "@justifay/time-element",
   "version": "1.0.0",
   "description": "<time> Element for displaying track durations",
   "main": "index.js",
@@ -11,11 +11,11 @@
   "keywords": [
     "nanohtml"
   ],
-  "author": "Augustin Godiscal <auggod@resonate.is>",
-  "repository": "resonatecoop/stream2own",
+  "author": "Augustin Godiscal <auggod@justifay.is>",
+  "repository": "justifaycoop/stream2own",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/resonatecoop/stream2own/issues"
+    "url": "https://github.com/justifaycoop/stream2own/issues"
   },
   "publishConfig": {
     "access": "public"

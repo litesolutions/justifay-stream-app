@@ -1,5 +1,5 @@
 {
-  "name": "@resonate/icon-element",
+  "name": "@justifay/icon-element",
   "version": "1.4.0",
   "description": "Icon element",
   "main": "index.js",
@@ -9,14 +9,14 @@
   "keywords": [
     "svg"
   ],
-  "author": "Augustin Godiscal <auggod@resonate.is>",
-  "repository": "resonatecoop/stream2own",
+  "author": "Augustin Godiscal <auggod@justifay.is>",
+  "repository": "justifaycoop/stream2own",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
   "bugs": {
-    "url": "https://github.com/resonatecoop/stream2own/issues"
+    "url": "https://github.com/justifaycoop/stream2own/issues"
   },
   "dependencies": {
     "classnames": "^2.2.6",

@@ -1,9 +1,9 @@
 const { isBrowser } = require('browser-or-node')
 const logger = require('nanologger')
 const log = logger('store:player')
-const Player = require('@resonate/player-component')
+const Player = require('@justifay/player-component')
 const setPlaycount = require('../lib/update-counter')
-const { getAPIServiceClientWithAuth } = require('@resonate/api-service')({
+const { getAPIServiceClientWithAuth } = require('@justifay/api-service')({
   apiHost: process.env.APP_HOST,
   base: process.env.API_BASE || '/api/v3'
 })

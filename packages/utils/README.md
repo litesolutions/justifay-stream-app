@@ -1,3 +1,3 @@
-# @resonate/utils
+# @justifay/utils
 
-Utilities library for resonate codebase
+Utilities library for justifay codebase

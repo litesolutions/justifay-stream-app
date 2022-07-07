@@ -1,7 +1,7 @@
 require('@babel/polyfill')
 
 const test = require('tape')
-// import { Track } from '@resonate/schemas/track'
+// import { Track } from '@justifay/schemas/track'
 const factoryGenerator = require('../')
 
 const api = factoryGenerator(
@@ -27,7 +27,7 @@ const api = factoryGenerator(
   },
   {
     mode: 'cors',
-    domain: 'api.resonate.localhost',
+    domain: 'api.justifay.localhost',
     scheme: 'https://',
     prefix: '/v1',
     version: 1,

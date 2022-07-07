@@ -1,11 +1,11 @@
 # Counter
 
-Render a play count element (to be used with @resonate/play-count)
+Render a play count element (to be used with @justifay/play-count)
 
 ## Installation
 
 ```sh
-$ npm i --save @resonate/counter
+$ npm i --save @justifay/counter
 ```
 
 ## License
@@ -14,4 +14,4 @@ MIT
 
 ## Author(s)
 
-- Augustin Godiscal <auggod@resonate.is>
+- Augustin Godiscal <auggod@justifay.is>

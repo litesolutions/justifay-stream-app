@@ -10,7 +10,7 @@
     "test": "run-s test:lint test:deps",
     "test:lint": "eslint .",
     "test:browser": "browserify -t [babelify] test/browser/index.js | tape-run --port 5000 --keep-open | tap-format-spec",
-    "test:deps": "dependency-check . -i @resonate/tachyons --no-dev"
+    "test:deps": "dependency-check . -i @justifay/tachyons --no-dev"
   },
   "browser": {
     "assert": "nanoassert"
@@ -23,7 +23,7 @@
   "browserify": {
     "transform": [
       [
-        "@resonate/envlocalify",
+        "@justifay/envlocalify",
         {
           "envfile": "./.env",
           "global": true
@@ -51,18 +51,18 @@
   },
   "license": "gpl3",
   "dependencies": {
-    "@resonate/api-factory-generator": "*",
-    "@resonate/choo-plugins": "*",
-    "@resonate/dialog-component": "*",
-    "@resonate/grid": "*",
-    "@resonate/icon-element": "*",
-    "@resonate/link-element": "*",
-    "@resonate/player-component": "*",
-    "@resonate/playlist-component": "*",
-    "@resonate/svg-image-placeholder": "*",
-    "@resonate/tachyons": "*",
-    "@resonate/theme-skins": "*",
-    "@resonate/track-component": "*",
+    "@justifay/api-factory-generator": "*",
+    "@justifay/choo-plugins": "*",
+    "@justifay/dialog-component": "*",
+    "@justifay/grid": "*",
+    "@justifay/icon-element": "*",
+    "@justifay/link-element": "*",
+    "@justifay/player-component": "*",
+    "@justifay/playlist-component": "*",
+    "@justifay/svg-image-placeholder": "*",
+    "@justifay/tachyons": "*",
+    "@justifay/theme-skins": "*",
+    "@justifay/track-component": "*",
     "choo": "^7.1.0",
     "choo-devtools": "^3.0.4",
     "choo-service-worker": "^2.4.0",

@@ -55,7 +55,7 @@ services:
       - web-root:/var/www/html
     depends_on:
       - webserver
-    command: certonly --webroot --webroot-path=/var/www/html --email auggod@resonate.is --agree-tos --no-eff-email --force-renewal -d stream.resonate.coop
+    command: certonly --webroot --webroot-path=/var/www/html --email auggod@justifay.is --agree-tos --no-eff-email --force-renewal -d stream.justifay.coop
 
 networks:
   embed-network:

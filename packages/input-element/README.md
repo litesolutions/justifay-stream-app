@@ -1,11 +1,11 @@
-# @resonate/input-element
+# @justifay/input-element
 
 Render an HTML input element
 
 ## Install
 
 ```sh
-npm i --save @resonate/input-element
+npm i --save @justifay/input-element
 ```
 
 ## License
@@ -14,4 +14,4 @@ MIT
 
 ## Author(s)
 
-- Augustin Godiscal <auggod@resonate.is>
+- Augustin Godiscal <auggod@justifay.is>

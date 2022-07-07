@@ -1,17 +1,17 @@
-# @resonate/track-component
+# @justifay/track-component
 
 Track component
 
 ## Installation
 
 ```sh
-$ npm i --save @resonate/track-component
+$ npm i --save @justifay/track-component
 ```
 
 ## See also
 
-[@resonate/player-component](/packages/player-component)
-[@resonate/playlist-component](/packages/playlist-component)
+[@justifay/player-component](/packages/player-component)
+[@justifay/playlist-component](/packages/playlist-component)
 
 ## License
 
@@ -19,4 +19,4 @@ MIT
 
 ## Author(s)
 
-- Augustin Godiscal <auggod@resonate.is>
+- Augustin Godiscal <auggod@justifay.is>

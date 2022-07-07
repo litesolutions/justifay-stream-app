@@ -1,4 +1,4 @@
-const apiFactoryGenerator = require('@resonate/api-factory-generator')
+const apiFactoryGenerator = require('@justifay/api-factory-generator')
 
 /**
  * REST API configuration
@@ -7,7 +7,7 @@ const apiFactoryGenerator = require('@resonate/api-factory-generator')
 const generateApi = (options) => {
   const defaultOptions = {
     scheme: 'https://',
-    domain: process.env.API_DOMAIN || 'api.resonate.localhost',
+    domain: process.env.API_DOMAIN || 'api.justifay.localhost',
     prefix: process.env.API_PREFIX || '/v1',
     version: 1
   }

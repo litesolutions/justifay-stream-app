@@ -5,7 +5,7 @@ const isUrl = require('validator/lib/isURL')
 const resolvePlaysAndFavorites = require('../lib/resolve-plays-favorites')
 const LoaderTimeout = require('../lib/loader-timeout')
 
-const { getAPIServiceClientWithAuth } = require('@resonate/api-service')({
+const { getAPIServiceClientWithAuth } = require('@justifay/api-service')({
   apiHost: process.env.APP_HOST,
   base: process.env.API_BASE || '/api/v3'
 })
@@ -17,7 +17,7 @@ const { getAPIServiceClientWithAuth } = require('@resonate/api-service')({
 const logger = require('nanologger')
 const log = logger('stream2own')
 
-const Playlist = require('@resonate/playlist-component')
+const Playlist = require('@justifay/playlist-component')
 
 function app () {
   return (state, emitter) => {
@@ -64,7 +64,7 @@ function app () {
         title: setTitle(title),
         'twitter:card': 'summary_large_image',
         'twitter:title': setTitle(title),
-        'twitter:site': '@resonatecoop'
+        'twitter:site': '@justifaycoop'
       })
     }
 
@@ -151,7 +151,7 @@ function app () {
                 item
               ],
               track: item,
-              url: item.url || `https://api.resonate.is/v1/stream/${item.id}`
+              url: item.url || `https://api.justifay.is/v1/stream/${item.id}`
             }
           })
           state.library.numberOfPages = response.numberOfPages || response.pages

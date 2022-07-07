@@ -1,7 +1,7 @@
 const Component = require('choo/component')
 const html = require('choo/html')
-const icon = require('@resonate/icon-element')
-const link = require('@resonate/link-element')
+const icon = require('@justifay/icon-element')
+const link = require('@justifay/link-element')
 
 class Header extends Component {
   constructor (id, state, emit) {
@@ -22,7 +22,7 @@ class Header extends Component {
           target: '_blank',
           text: icon('logo', { class: 'fill-white' }),
           prefix: 'link flex items-center flex-shrink-0 h-100 ph2 ml2',
-          title: 'Resonate'
+          title: 'Justifay'
         })}
       </header>
     `

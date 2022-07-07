@@ -1,7 +1,7 @@
 {
-  "name": "@resonate/api-factory-generator",
+  "name": "@justifay/api-factory-generator",
   "version": "2.1.4",
-  "description": "Project first published as @zerowastemap/api-factory-generator. Forked it to allow more specific configuration for resonate.",
+  "description": "Project first published as @zerowastemap/api-factory-generator. Forked it to allow more specific configuration for justifay.",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -13,11 +13,11 @@
   "keywords": [
     "api"
   ],
-  "author": "Augustin Godiscal <auggod@resonate.is>",
-  "repository": "resonatecoop/stream2own",
+  "author": "Augustin Godiscal <auggod@justifay.is>",
+  "repository": "justifaycoop/stream2own",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/resonatecoop/stream2own/issues"
+    "url": "https://github.com/justifaycoop/stream2own/issues"
   },
   "publishConfig": {
     "access": "public"

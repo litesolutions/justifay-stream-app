@@ -14,9 +14,9 @@ Authentication is not enabled.
 
 It's more a note for those who got involved in pre open-source development. We now use postcss instead of scss.
 
-## All `@resonate` NPM packages are now available in our new monorepo inside `/packages/**/*`
+## All `@justifay` NPM packages are now available in our new monorepo inside `/packages/**/*`
 
-Some packages got republished with different names. Hence `@resonate/player-component` instead of `@resonate/player`.
+Some packages got republished with different names. Hence `@justifay/player-component` instead of `@justifay/player`.
 
 Our NPM org has now public packages enabled.
 

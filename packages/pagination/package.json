@@ -1,5 +1,5 @@
 {
-  "name": "@resonate/pagination",
+  "name": "@justifay/pagination",
   "version": "1.0.6",
   "description": "Pagination ui component",
   "main": "index.js",
@@ -8,19 +8,19 @@
     "test-deps": "dependency-check . && dependency-check . --extra"
   },
   "keywords": [],
-  "author": "Augustin Godiscal <auggod@resonate.is>",
+  "author": "Augustin Godiscal <auggod@justifay.is>",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
-  "repository": "resonatecoop/stream2own",
+  "repository": "justifaycoop/stream2own",
   "bugs": {
-    "url": "https://github.com/resonatecoop/stream2own/issues"
+    "url": "https://github.com/justifaycoop/stream2own/issues"
   },
   "dependencies": {
-    "@resonate/icon-element": "file:../icon-element",
-    "@resonate/theme-skins": "^1.1.2",
-    "@resonate/utils": "^1.0.1",
+    "@justifay/icon-element": "file:../icon-element",
+    "@justifay/theme-skins": "^1.1.2",
+    "@justifay/utils": "^1.0.1",
     "nanocomponent": "^6.5.2",
     "nanohtml": "^1.8.1"
   }

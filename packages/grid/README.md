@@ -1,11 +1,11 @@
-# @resonate/grid
+# @justifay/grid
 
 Render a grid element.
 
 ## Install
 
 ```sh
-npm i --save @resonate/grid
+npm i --save @justifay/grid
 ```
 
 ## License
@@ -14,4 +14,4 @@ MIT
 
 ## Author(s)
 
-- Augustin Godiscal <auggod@resonate.is>
+- Augustin Godiscal <auggod@justifay.is>

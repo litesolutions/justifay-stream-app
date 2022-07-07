@@ -9,7 +9,7 @@ const cache = new LRU(100)
  */
 const APIServiceClient = (options) => {
   const {
-    apiHost = 'https://stream.resonate.coop',
+    apiHost = 'https://stream.justifay.coop',
     base = '/api/v2',
     fullClient = false
   } = options
@@ -62,7 +62,7 @@ const APIServiceClient = (options) => {
 
 /**
  * @description Get swagger api definition with auth
- * @param {String} token Resonate User Token
+ * @param {String} token Justifay User Token
  */
 const APIServiceClientWithAuth = (options) => {
   return (token, prefix = 'user') => {

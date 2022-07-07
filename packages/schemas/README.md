@@ -1,18 +1,18 @@
-# [WIP] Resonate schemas (v2 api)
+# [WIP] Justifay schemas (v2 api)
 
 All our schemas
 
 ## Installation
 
 ```sh
-$ npm i --save @resonate/schemas
+$ npm i --save @justifay/schemas
 ```
 
 ## Usage with api v1
 
 ```javascript
 
-const adapter = require('@resonate/schemas/adapters/v1/track')
+const adapter = require('@justifay/schemas/adapters/v1/track')
 
 const track = adapter({
   name: 'foo'
@@ -28,4 +28,4 @@ MIT
 
 ## Author(s)
 
-- Augustin Godiscal <auggod@resonate.is>
+- Augustin Godiscal <auggod@justifay.is>
