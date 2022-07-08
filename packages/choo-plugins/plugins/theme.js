@@ -7,15 +7,15 @@ module.exports = theme
 function theme (options = {}) {
   return (state, emitter) => {
     if (isBrowser) {
-      const theme = (localStorage !== null && localStorage.getItem('color-scheme')) || 'light'
+      const theme = (localStorage !== null && localStorage.getItem('color-scheme')) || 'dark'
       document.body.classList.add(`color-scheme--${theme}`)
       state.theme = theme
     } else {
-      state.theme = 'light'
+      state.theme = 'dark'
     }
 
     emitter.on('theme', (props) => {
-      const { theme = 'light', auto = false } = props
+      const { theme = 'dark', auto = false } = props
 
       if (!auto) {
         document.body.classList.toggle('color-scheme--light', theme === 'light')

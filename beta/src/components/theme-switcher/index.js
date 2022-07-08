@@ -18,7 +18,7 @@ class ThemeSwitcher extends Component {
     this.log = nanologger(id)
 
     this.local.machine = nanostate.parallel({
-      theme: nanostate(this.state.theme || 'light', {
+      theme: nanostate(this.state.theme || 'dark', {
         dark: { toggle: 'light' },
         light: { toggle: 'dark' }
       })
@@ -82,9 +82,7 @@ class ThemeSwitcher extends Component {
   }
 
   load (el) {
-    this.local.auto = localStorage !== null && 'color-scheme' in localStorage
-      ? !!localStorage.getItem('color-scheme-auto')
-      : true
+    this.local.auto = localStorage !== null && !!localStorage.getItem('color-scheme-auto')
 
     this.rerender()
 
