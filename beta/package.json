@@ -20,7 +20,7 @@
     "test:deps": "dependency-check ./src/index.ts -i nanobus -i @resonate/tachyons -i web-animations-js --no-dev",
     "test:browser": "run-s build:ts build:assets:* && browserify build/test/browser/index.js | tape-run | tap-format-spec"
   },
-  "repository": "https://github.com/justifaycoop/stream2own",
+  "repository": "https://github.com/litesolutions/justifay-stream-app",
   "documentify": {
     "transform": [
       "./documentify/variables",
