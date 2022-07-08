@@ -19,20 +19,21 @@ const log = logger('stream2own')
 
 const Playlist = require('@resonate/playlist-component')
 
+const tracks = require('../fixtures/tracks')
+
 function app () {
   return (state, emitter) => {
     Object.assign(state, {
       title: 'Justifay',
-      credits: 0,
       resolved: false,
       library: {
         items: []
       },
       user: {
-        uid: 0,
+        id: 0,
         ownedGroups: []
       },
-      tracks: [],
+      tracks,
       albums: [],
       notification: {
         permission: false
@@ -64,7 +65,7 @@ function app () {
         title: setTitle(title),
         'twitter:card': 'summary_large_image',
         'twitter:title': setTitle(title),
-        'twitter:site': '@justifaycoop'
+        'twitter:site': '@resonatecoop'
       })
     }
 

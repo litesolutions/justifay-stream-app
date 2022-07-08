@@ -76,7 +76,7 @@ class Player extends Nanocomponent {
 
       const isNew = sound.state.src !== this.local.src
 
-      if (isNew) {
+      if (isNew && sound !== null) {
         this.local.played = false
 
         sound.load(this.local.src)
@@ -298,7 +298,7 @@ class Player extends Nanocomponent {
       this.local.count = props.count || 0
       this.local.index = this.local.playlist.findIndex((item) => item.track.id === this.local.track.id)
 
-      if (props.src !== null && props.src !== this.local.src) {
+      if (props.src !== null && props.src !== this.local.src && sound !== null) {
         this.local.src = props.src
         sound.load(this.local.src)
       }
@@ -618,7 +618,7 @@ class Player extends Nanocomponent {
   }
 
   update (props = {}) {
-    if (!this.local.src) {
+    if (!this.local.src && sound !== null) {
       log.info('Updating src')
 
       this.local.track = props.track || {}
@@ -628,7 +628,7 @@ class Player extends Nanocomponent {
       this.local.playlist = props.playlist || []
       this.local.index = this.local.playlist.findIndex((item) => item.track.id === this.local.track.id)
 
-      if ((props.src && props.src !== this.local.src)) {
+      if ((props.src && props.src !== this.local.src && sound !== null)) {
         this.local.played = false
         this.local.src = props.src
 
