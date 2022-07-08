@@ -1,4 +1,4 @@
-const { getAPIServiceClient } = require('@justifay/api-service')({
+const { getAPIServiceClient } = require('@resonate/api-service')({
   apiHost: process.env.APP_HOST,
   base: process.env.API_BASE || '/api/v3'
 })

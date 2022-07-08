@@ -11,14 +11,14 @@ Project first published as @zerowastemap/api-factory-generator. Forked it to all
 ## Installation
 
 ```sh
-$ npm i --save @justifay/api-factory-generator
+$ npm i --save @resonate/api-factory-generator
 ```
 
 ## Usage
 
 ```javascript
 
-const generator = require('@justifay/api-factory-generator')
+const generator = require('@resonate/api-factory-generator')
 
 // set default options for each requests
 const options = {
@@ -94,4 +94,4 @@ MIT
 
 ## Author(s)
 
-- Augustin Godiscal <auggod@justifay.is>
+- Augustin Godiscal <auggod@resonate.is>

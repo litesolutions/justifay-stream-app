@@ -1,5 +1,5 @@
 const html = require('choo/html')
-const { background: bg, borders: borderColors } = require('@justifay/theme-skins')
+const { background: bg, borders: borderColors } = require('@resonate/theme-skins')
 
 module.exports = renderTotal
 

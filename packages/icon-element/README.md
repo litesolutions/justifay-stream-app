@@ -1,11 +1,11 @@
-# @justifay/icon-element
+# @resonate/icon-element
 
 Render an svg element from an SVG icons set
 
 ## Installation
 
 ```sh
-npm i --save @justifay/icon-element
+npm i --save @resonate/icon-element
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ npm i --save @justifay/icon-element
 ```javascript
 
 const html = require('nanohtml')
-const icon = require('@justifay/icon-element')
+const icon = require('@resonate/icon-element')
 
 module.exports = () => html`
   <div>
@@ -41,4 +41,4 @@ MIT
 
 ## Author(s)
 
-- Augustin Godiscal <auggod@justifay.is>
+- Augustin Godiscal <auggod@resonate.is>

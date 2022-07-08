@@ -1,5 +1,5 @@
 {
-  "name": "@justifay/api-factory-generator",
+  "name": "@resonate/api-factory-generator",
   "version": "2.1.4",
   "description": "Project first published as @zerowastemap/api-factory-generator. Forked it to allow more specific configuration for justifay.",
   "main": "index.js",
@@ -13,7 +13,7 @@
   "keywords": [
     "api"
   ],
-  "author": "Augustin Godiscal <auggod@justifay.is>",
+  "author": "Augustin Godiscal <auggod@resonate.is>",
   "repository": "justifaycoop/stream2own",
   "license": "MIT",
   "bugs": {

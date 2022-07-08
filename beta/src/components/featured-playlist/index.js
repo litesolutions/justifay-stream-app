@@ -1,11 +1,11 @@
 const Component = require('choo/component')
-const Grid = require('@justifay/grid')
-const imagePlaceholder = require('@justifay/svg-image-placeholder')
-const Playlist = require('@justifay/playlist-component')
+const Grid = require('@resonate/grid')
+const imagePlaceholder = require('@resonate/svg-image-placeholder')
+const Playlist = require('@resonate/playlist-component')
 const html = require('choo/html')
 const LoaderTimeout = require('../../lib/loader-timeout')
 const resolvePlaysAndFavorites = require('../../lib/resolve-plays-favorites')
-const { getAPIServiceClient } = require('@justifay/api-service')({
+const { getAPIServiceClient } = require('@resonate/api-service')({
   apiHost: process.env.APP_HOST,
   base: process.env.API_BASE || '/api/v3'
 })

@@ -1,5 +1,5 @@
 const html = require('choo/html')
-const icon = require('@justifay/icon-element')
+const icon = require('@resonate/icon-element')
 const Artists = require('../../components/profiles')
 const Pagination = require('../../components/pagination')
 const viewLayout = require('../../layouts/profile')

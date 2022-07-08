@@ -1,13 +1,13 @@
 const Component = require('choo/component')
 const compare = require('nanocomponent/compare')
 const html = require('choo/html')
-const Loader = require('@justifay/play-count-component')
-const Playlist = require('@justifay/playlist-component')
+const Loader = require('@resonate/play-count-component')
+const Playlist = require('@resonate/playlist-component')
 const nanostate = require('nanostate')
 const clone = require('shallow-clone')
 const renderMessage = require('../../elements/message')
-const imagePlaceholder = require('@justifay/svg-image-placeholder')
-const MenuButtonOptions = require('@justifay/menu-button-options-component')
+const imagePlaceholder = require('@resonate/svg-image-placeholder')
+const MenuButtonOptions = require('@resonate/menu-button-options-component')
 
 /*
  * Trackgroups (ep, lp, single) discography

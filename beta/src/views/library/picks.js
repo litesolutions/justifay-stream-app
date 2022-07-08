@@ -1,5 +1,5 @@
 const html = require('choo/html')
-const Playlist = require('@justifay/playlist-component')
+const Playlist = require('@resonate/playlist-component')
 const viewLayout = require('../../layouts/library')
 
 module.exports = () => viewLayout(renderPicks)

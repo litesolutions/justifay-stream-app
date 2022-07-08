@@ -1,5 +1,5 @@
 {
-  "name": "@justifay/svg-image-placeholder",
+  "name": "@resonate/svg-image-placeholder",
   "version": "1.0.0",
   "description": "SVG image placeholder",
   "main": "index.js",
@@ -7,6 +7,6 @@
     "test": "eslint ."
   },
   "keywords": [],
-  "author": "Augustin Godiscal <auggod@justifay.is>",
+  "author": "Augustin Godiscal <auggod@resonate.is>",
   "license": "MIT"
 }

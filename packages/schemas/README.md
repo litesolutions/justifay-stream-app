@@ -5,14 +5,14 @@ All our schemas
 ## Installation
 
 ```sh
-$ npm i --save @justifay/schemas
+$ npm i --save @resonate/schemas
 ```
 
 ## Usage with api v1
 
 ```javascript
 
-const adapter = require('@justifay/schemas/adapters/v1/track')
+const adapter = require('@resonate/schemas/adapters/v1/track')
 
 const track = adapter({
   name: 'foo'
@@ -28,4 +28,4 @@ MIT
 
 ## Author(s)
 
-- Augustin Godiscal <auggod@justifay.is>
+- Augustin Godiscal <auggod@resonate.is>

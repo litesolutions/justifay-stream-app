@@ -1,5 +1,5 @@
 {
-  "name": "@justifay/nanoplayer",
+  "name": "@resonate/nanoplayer",
   "version": "2.1.2",
   "description": "Audio element wrapper",
   "main": "index.js",
@@ -10,7 +10,7 @@
   "keywords": [
     "audio"
   ],
-  "author": "Augustin Godiscal <auggod@justifay.is>",
+  "author": "Augustin Godiscal <auggod@resonate.is>",
   "repository": "justifaycoop/stream2own",
   "license": "MIT",
   "bugs": {

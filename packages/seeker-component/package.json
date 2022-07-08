@@ -1,5 +1,5 @@
 {
-  "name": "@justifay/seeker-component",
+  "name": "@resonate/seeker-component",
   "version": "2.2.0",
   "description": "Seeker componen",
   "main": "index.js",
@@ -13,14 +13,14 @@
   "publishConfig": {
     "access": "public"
   },
-  "author": "Augustin Godiscal <auggod@justifay.is>",
+  "author": "Augustin Godiscal <auggod@resonate.is>",
   "repository": "justifaycoop/stream2own",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/justifaycoop/stream2own/issues"
   },
   "dependencies": {
-    "@justifay/rangeslider": "^1.1.2",
+    "@resonate/rangeslider": "^1.1.2",
     "nanocomponent": "^6.5.2",
     "nanohtml": "^1.8.1"
   }

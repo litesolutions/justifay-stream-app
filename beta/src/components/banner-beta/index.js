@@ -2,8 +2,8 @@
 
 const html = require('choo/html')
 const Component = require('choo/component')
-const link = require('@justifay/link-element')
-const icon = require('@justifay/icon-element')
+const link = require('@resonate/link-element')
+const icon = require('@resonate/icon-element')
 
 class Baneer extends Component {
   constructor (id, state, emit) {

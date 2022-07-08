@@ -1,9 +1,9 @@
-# @justifay/theme-skins
+# @resonate/theme-skins
 
 ## Installation
 
 ```sh
-$ npm i --save @justifay/theme-skins
+$ npm i --save @resonate/theme-skins
 ```
 
 ## Usage
@@ -11,7 +11,7 @@ $ npm i --save @justifay/theme-skins
 ```javascript
 
 const html = require('choo/html')
-const { background } = require('@justifay/theme-skins')
+const { background } = require('@resonate/theme-skins')
 
 const el = html`<div class=${background}></div>`
 
@@ -25,4 +25,4 @@ MIT
 
 ## Author(s)
 
-- Augustin Godiscal <auggod@justifay.is>
+- Augustin Godiscal <auggod@resonate.is>

@@ -1,5 +1,5 @@
 {
-  "name": "@justifay/volume-control-component",
+  "name": "@resonate/volume-control-component",
   "version": "2.2.0",
   "description": "Volume control using rangeslider-js",
   "main": "index.js",
@@ -10,7 +10,7 @@
   "keywords": [
     "nanocomponent"
   ],
-  "author": "Augustin Godiscal <auggod@justifay.is>",
+  "author": "Augustin Godiscal <auggod@resonate.is>",
   "repository": "justifaycoop/stream2own",
   "license": "MIT",
   "bugs": {
@@ -20,9 +20,9 @@
     "access": "public"
   },
   "dependencies": {
-    "@justifay/button": "^2.0.0",
-    "@justifay/rangeslider": "^1.1.2",
-    "@justifay/theme-skins": "^1.1.2",
+    "@resonate/button": "^2.0.0",
+    "@resonate/rangeslider": "^1.1.2",
+    "@resonate/theme-skins": "^1.1.2",
     "nanobounce": "^1.0.1",
     "nanocomponent": "^6.5.2",
     "nanohtml": "^1.8.1",

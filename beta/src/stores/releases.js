@@ -1,9 +1,9 @@
 const setTitle = require('../lib/title')
-const Playlist = require('@justifay/playlist-component')
+const Playlist = require('@resonate/playlist-component')
 const List = require('../components/trackgroups')
 const LoaderTimeout = require('../lib/loader-timeout')
 const resolvePlaysAndFavorites = require('../lib/resolve-plays-favorites')
-const { getAPIServiceClient } = require('@justifay/api-service')({
+const { getAPIServiceClient } = require('@resonate/api-service')({
   apiHost: process.env.APP_HOST,
   base: process.env.API_BASE || '/api/v3'
 })
@@ -349,7 +349,7 @@ function releases () {
         'og:url': 'https://beta.stream.justifay.coop' + state.href,
         'twitter:card': 'summary_large_image',
         'twitter:description': state.release.data.about || 'Browse new releases',
-        'twitter:site': '@justifaycoop',
+        'twitter:site': '@resonatecoop',
         'twitter:title': setTitle(title)
       }
 

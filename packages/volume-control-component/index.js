@@ -1,9 +1,9 @@
 const html = require('nanohtml')
 const Component = require('nanocomponent')
-const rangeSlider = require('@justifay/rangeslider')
-const button = require('@justifay/button')
+const rangeSlider = require('@resonate/rangeslider')
+const button = require('@resonate/button')
 const nanostate = require('nanostate')
-const { background } = require('@justifay/theme-skins')
+const { background } = require('@resonate/theme-skins')
 const Nanobounce = require('nanobounce')
 const nanobounce = Nanobounce(300)
 

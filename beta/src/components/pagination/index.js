@@ -1,10 +1,10 @@
 const Component = require('choo/component')
 const html = require('nanohtml')
-const icon = require('@justifay/icon-element')
-const { nextMultiple, range } = require('@justifay/utils')
+const icon = require('@resonate/icon-element')
+const { nextMultiple, range } = require('@resonate/utils')
 
 /**
- * WIP Rewrite of @justifay/pagination
+ * WIP Rewrite of @resonate/pagination
  */
 
 class Pagination extends Component {

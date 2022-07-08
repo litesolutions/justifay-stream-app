@@ -2,14 +2,14 @@
 
 const Component = require('choo/component')
 const html = require('choo/html')
-const button = require('@justifay/button')
+const button = require('@resonate/button')
 const nanostate = require('nanostate')
-const Playlist = require('@justifay/playlist-component')
-const imagePlaceholder = require('@justifay/svg-image-placeholder')
-const adapter = require('@justifay/schemas/adapters/v1/track')
+const Playlist = require('@resonate/playlist-component')
+const imagePlaceholder = require('@resonate/svg-image-placeholder')
+const adapter = require('@resonate/schemas/adapters/v1/track')
 const setLoaderTimeout = require('../../lib/loader-timeout')
 const resolvePlaysAndFavorites = require('../../lib/resolve-plays-favorites')
-const { getAPIServiceClient } = require('@justifay/api-service')({
+const { getAPIServiceClient } = require('@resonate/api-service')({
   apiHost: process.env.APP_HOST,
   base: process.env.API_BASE || '/api/v3'
 })

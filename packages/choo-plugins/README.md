@@ -1,4 +1,4 @@
-# @justifay/choo-plugins
+# @resonate/choo-plugins
 
 Library for all choo plugins in justifay frontend projects
 
@@ -13,14 +13,14 @@ Library for all choo plugins in justifay frontend projects
 ## Installation
 
 ```sh
-$ npm i --save @justifay/choo-plugins
+$ npm i --save @resonate/choo-plugins
 ```
 
 ## Usage
 
 ```javascript
 
-  const { offlineDetect: offlineDetectPlugin } = require('@justifay/choo-plugins')
+  const { offlineDetect: offlineDetectPlugin } = require('@resonate/choo-plugins')
 
   const app = choo()
 
@@ -34,4 +34,4 @@ MIT
 
 ## Author(s)
 
-- Augustin Godiscal <auggod@justifay.is>
+- Augustin Godiscal <auggod@resonate.is>

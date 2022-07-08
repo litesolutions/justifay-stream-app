@@ -13,7 +13,7 @@ const Nanocomponent = require('nanocomponent')
 const html = require('nanohtml')
 const MenuItem = require('./MenuItemAction.js')
 const animation = require('nanoanimation')
-const icon = require('@justifay/icon-element')
+const icon = require('@resonate/icon-element')
 const classnames = require('classnames')
 
 /*

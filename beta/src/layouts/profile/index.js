@@ -1,10 +1,10 @@
 const html = require('choo/html')
-const icon = require('@justifay/icon-element')
+const icon = require('@resonate/icon-element')
 const ProfileHeader = require('../../components/profile-header')
 const ProfileHeaderImage = require('../../components/profile-header/image')
 const navigateToAnchor = require('../../lib/navigate-to-anchor')
 const { isNode } = require('browser-or-node')
-const { background: bg } = require('@justifay/theme-skins')
+const { background: bg } = require('@resonate/theme-skins')
 
 const links = [
   {

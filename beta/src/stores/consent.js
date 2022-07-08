@@ -1,9 +1,9 @@
 /* global localStorage */
 
-const Dialog = require('@justifay/dialog-component')
+const Dialog = require('@resonate/dialog-component')
 const cookies = require('browser-cookies')
-const button = require('@justifay/button')
-const link = require('@justifay/link-element')
+const button = require('@resonate/button')
+const link = require('@resonate/link-element')
 const html = require('choo/html')
 
 module.exports = () => {

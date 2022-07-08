@@ -1,9 +1,9 @@
 const html = require('choo/html')
-const imagePlaceholder = require('@justifay/svg-image-placeholder')
-const Playlist = require('@justifay/playlist-component')
+const imagePlaceholder = require('@resonate/svg-image-placeholder')
+const Playlist = require('@resonate/playlist-component')
 const viewLayout = require('../../layouts/trackgroup')
 const { isNode } = require('browser-or-node')
-const MenuButtonOptions = require('@justifay/menu-button-options-component')
+const MenuButtonOptions = require('@resonate/menu-button-options-component')
 const { format, parseISO } = require('date-fns')
 
 /**

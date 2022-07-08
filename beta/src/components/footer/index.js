@@ -1,7 +1,7 @@
 const html = require('choo/html')
 const Component = require('choo/component')
-const icon = require('@justifay/icon-element')
-const link = require('@justifay/link-element')
+const icon = require('@resonate/icon-element')
+const link = require('@resonate/link-element')
 
 class Footer extends Component {
   constructor (id, state, emit) {

@@ -4,8 +4,8 @@ const Component = require('choo/component')
 const nanostate = require('nanostate')
 const nanologger = require('nanologger')
 const html = require('choo/html')
-const icon = require('@justifay/icon-element')
-const { iconFillInvert } = require('@justifay/theme-skins')
+const icon = require('@resonate/icon-element')
+const { iconFillInvert } = require('@resonate/theme-skins')
 
 class ThemeSwitcher extends Component {
   constructor (id, state, emit) {

@@ -1,6 +1,6 @@
 const html = require('choo/html')
 const Releases = require('../../components/trackgroups')
-const button = require('@justifay/button')
+const button = require('@resonate/button')
 const { isNode } = require('browser-or-node')
 const Pagination = require('../../components/pagination')
 const viewLayout = require('../../layouts/browse')

@@ -5,15 +5,15 @@ Render a menu button.
 ## Installation (old package)
 
 ```sh
-npm i --save @justifay/menu-button
+npm i --save @resonate/menu-button
 ```
 
-Renamed to @justifay/menu-button-component (not published yet)
+Renamed to @resonate/menu-button-component (not published yet)
 
 ## Usage
 
 ```javascript
-const MenuButton = require('@justifay/menu-button-component')
+const MenuButton = require('@resonate/menu-button-component')
 
 module.exports = (state, emit) => {
   const menuButton = state.cache(MenuButton, 'super-menu-button')
@@ -51,4 +51,4 @@ MIT
 
 ## Author(s)
 
-- Augustin Godiscal <auggod@justifay.is>
+- Augustin Godiscal <auggod@resonate.is>

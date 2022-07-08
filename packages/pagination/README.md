@@ -1,3 +1,3 @@
-# @justifay/pagination
+# @resonate/pagination
 
 Pagination ui component

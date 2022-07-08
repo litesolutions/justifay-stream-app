@@ -1,15 +1,15 @@
 import logger from 'nanologger'
 import setTitle from '../lib/title'
 import copy from 'clipboard-copy'
-import Dialog from '@justifay/dialog-component'
+import Dialog from '@resonate/dialog-component'
 import setPlaycount from '../lib/update-counter'
-import button from '@justifay/button'
-import link from '@justifay/link-element'
-import Playlist from '@justifay/playlist-component'
+import button from '@resonate/button'
+import link from '@resonate/link-element'
+import Playlist from '@resonate/playlist-component'
 import LoaderTimeout from '../lib/loader-timeout'
 import resolvePlaysAndFavorites from '../lib/resolve-plays-favorites'
-import APIService from '@justifay/api-service'
-import { calculateRemainingCost, formatCredit } from '@justifay/utils'
+import APIService from '@resonate/api-service'
+import { calculateRemainingCost, formatCredit } from '@resonate/utils'
 import { AppState } from '../types'
 import type { TrackAPIResponse, TracksFindProps } from './tracks.types'
 // eslint-disable-next-line @typescript-eslint/no-var-requires
@@ -380,7 +380,7 @@ function tracks () {
         'twitter:card': 'player',
         'twitter:title': fullTitle,
         'twitter:image': cover,
-        'twitter:site': '@justifaycoop',
+        'twitter:site': '@resonatecoop',
         'twitter:player:width': '400',
         'twitter:player:height': '600',
         'twitter:player': `https://stream.justifay.coop/embed/track/${id}`

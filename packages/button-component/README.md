@@ -1,11 +1,11 @@
-# @justifay/button-component
+# @resonate/button-component
 
-Component wrapper for `@justifay/button` element
+Component wrapper for `@resonate/button` element
 
 ## Installation
 
 ```sh
-$ npm i --save @justifay/button-component
+$ npm i --save @resonate/button-component
 ```
 
 ## License
@@ -14,4 +14,4 @@ MIT
 
 ## Author(s)
 
-- Augustin Godiscal <auggod@justifay.is>
+- Augustin Godiscal <auggod@resonate.is>

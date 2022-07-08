@@ -1,11 +1,11 @@
-# @justifay/nanoplayer
+# @resonate/nanoplayer
 
 Audio element wrapper
 
 ## Installation
 
 ```sh
-npm i --save @justifay/nanoplayer
+npm i --save @resonate/nanoplayer
 ```
 
 ## License
@@ -14,4 +14,4 @@ MIT
 
 ## Author(s)
 
-- Augustin Godiscal <auggod@justifay.is>
+- Augustin Godiscal <auggod@resonate.is>

@@ -1,8 +1,8 @@
 import startLayout from '../../layouts/start'
-import icon from '@justifay/icon-element'
+import icon from '@resonate/icon-element'
 import { isNode } from 'browser-or-node'
 import Component from 'choo/component'
-import imagePlaceholder from '@justifay/svg-image-placeholder'
+import imagePlaceholder from '@resonate/svg-image-placeholder'
 import { AppState } from '../../types'
 import { View } from '../main'
 // eslint-disable-next-line @typescript-eslint/no-var-requires

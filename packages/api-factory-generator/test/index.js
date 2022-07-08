@@ -1,7 +1,7 @@
 require('@babel/polyfill')
 
 const test = require('tape')
-// import { Track } from '@justifay/schemas/track'
+// import { Track } from '@resonate/schemas/track'
 const factoryGenerator = require('../')
 
 const api = factoryGenerator(

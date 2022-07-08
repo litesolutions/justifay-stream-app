@@ -1,7 +1,7 @@
 /* global fetch */
 
-const Dialog = require('@justifay/dialog-component')
-const button = require('@justifay/button')
+const Dialog = require('@resonate/dialog-component')
+const button = require('@resonate/button')
 const html = require('choo/html')
 
 const logger = require('nanologger')

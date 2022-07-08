@@ -13,10 +13,10 @@ Check out the [examples](http://stryzhevskyi.github.io/rangeSlider/).
 
 ## Install
 
-Install with [npm](https://www.npmjs.com/package/@justifay/rangeslider):
+Install with [npm](https://www.npmjs.com/package/@resonate/rangeslider):
 
 ```sh
-npm i --save @justifay/rangeslider
+npm i --save @resonate/rangeslider
 ```
 
 ## Usage

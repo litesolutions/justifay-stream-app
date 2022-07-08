@@ -1,11 +1,11 @@
-# @justifay/playlist-component
+# @resonate/playlist-component
 
 Playlist component
 
 ## Installation
 
 ```sh
-$ npm i --save @justifay/playlist-component
+$ npm i --save @resonate/playlist-component
 ```
 
 ## License
@@ -14,4 +14,4 @@ MIT
 
 ## Author(s)
 
-- Augustin Godiscal <auggod@justifay.is>
+- Augustin Godiscal <auggod@resonate.is>

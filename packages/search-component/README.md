@@ -1,16 +1,16 @@
-# @justifay/search-component
+# @resonate/search-component
 
 ## Installation
 
 ```sh
-$ npm i --save @justifay/search-component
+$ npm i --save @resonate/search-component
 ```
 
 ## Usage
 
 ```js
 const html = require('choo/html')
-const Search = require('@justifay/search-component')
+const Search = require('@resonate/search-component')
 
 module.exports = () => {
   return html`
@@ -26,4 +26,4 @@ MIT
 
 ## Author(s)
 
-- Augustin Godiscal <auggod@justifay.is>
+- Augustin Godiscal <auggod@resonate.is>

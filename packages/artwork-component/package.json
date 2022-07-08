@@ -1,5 +1,5 @@
 {
-  "name": "@justifay/artwork-component",
+  "name": "@resonate/artwork-component",
   "version": "2.1.4",
   "description": "Artwork component",
   "main": "index.js",
@@ -12,7 +12,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "author": "Augustin Godiscal <auggod@justifay.is>",
+  "author": "Augustin Godiscal <auggod@resonate.is>",
   "repository": "justifaycoop/stream2own",
   "license": "MIT",
   "bugs": {

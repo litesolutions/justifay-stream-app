@@ -4,7 +4,7 @@ const setTitle = require('../lib/title')
 const Profiles = require('../components/profiles')
 const Discography = require('../components/discography')
 const setLoaderTimeout = require('../lib/loader-timeout')
-const { getAPIServiceClient, getAPIServiceClientWithAuth } = require('@justifay/api-service')({
+const { getAPIServiceClient, getAPIServiceClientWithAuth } = require('@resonate/api-service')({
   apiHost: process.env.APP_HOST,
   base: process.env.API_BASE || '/api/v3'
 })
@@ -448,7 +448,7 @@ function labels () {
         'og:url': 'https://beta.stream.justifay.coop' + state.href,
         'twitter:card': 'summary_large_image',
         'twitter:description': description,
-        'twitter:site': '@justifaycoop',
+        'twitter:site': '@resonatecoop',
         'twitter:title': setTitle(title)
       }
 

@@ -1,18 +1,18 @@
-# @justifay/player-component
+# @resonate/player-component
 
 Player component
 
 ## Installation
 
 ```sh
-$ npm i --save @justifay/player-component
+$ npm i --save @resonate/player-component
 ```
 
 ## Usage
 
 ```js
 
-const Player = require('@justifay/player-component')
+const Player = require('@resonate/player-component')
 
 function (state, emit) {
   return html`
@@ -49,7 +49,7 @@ function (state, emit) {
 ## Options
 
 - `prefix` A single class or classlist
-- `menu` An array of menu item configuration for `@justifay/menu-button`
+- `menu` An array of menu item configuration for `@resonate/menu-button`
 
 ## Playback control
 
@@ -68,7 +68,7 @@ machine.playback.emit('pause')
 
 ## Icons
 
-See `@justifay/icon-element`
+See `@resonate/icon-element`
 
 SVG icons set configuration.
 
@@ -86,4 +86,4 @@ MIT
 
 ## Author(s)
 
-- Augustin Godiscal <auggod@justifay.is>
+- Augustin Godiscal <auggod@resonate.is>

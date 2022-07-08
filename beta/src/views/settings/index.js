@@ -1,5 +1,5 @@
 const html = require('choo/html')
-const button = require('@justifay/button')
+const button = require('@resonate/button')
 const viewLayout = require('../../layouts/default')
 
 module.exports = () => viewLayout(renderSettings)

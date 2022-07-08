@@ -1,5 +1,5 @@
 const html = require('choo/html')
-const icon = require('@justifay/icon-element')
+const icon = require('@resonate/icon-element')
 const viewLayout = require('../../layouts/profile')
 const renderTotal = require('../../elements/total')
 const Playlists = require('../../components/trackgroups')
@@ -7,7 +7,7 @@ const Pagination = require('../../components/pagination')
 const Discography = require('../../components/discography')
 const Profiles = require('../../components/profiles')
 const renderBio = require('./biography')
-const Playlist = require('@justifay/playlist-component')
+const Playlist = require('@resonate/playlist-component')
 
 /**
  * Profile view for creators (artist, band or label)

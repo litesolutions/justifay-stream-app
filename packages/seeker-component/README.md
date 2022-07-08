@@ -1,11 +1,11 @@
-# @justifay/seeker-component
+# @resonate/seeker-component
 
 Sound seeker component (using rangeslider)
 
 ## Installation
 
 ```sh
-$ npm i --save @justifay/seeker-component
+$ npm i --save @resonate/seeker-component
 ```
 
 ## License
@@ -14,4 +14,4 @@ MIT
 
 ## Author(s)
 
-- Augustin Godiscal <auggod@justifay.is>
+- Augustin Godiscal <auggod@resonate.is>

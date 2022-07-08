@@ -128,7 +128,7 @@ const faq = [
       },
       {
         question: 'How do I get a Label Account?',
-        answer: 'We are rebuilding our Label Account infrastructure. Until we’re done, new signups have been paused for Label Accounts. Email <a href="mailto:members@justifay.is">members@justifay.is</a> to be notified when signup is live again.'
+        answer: 'We are rebuilding our Label Account infrastructure. Until we’re done, new signups have been paused for Label Accounts. Email <a href="mailto:members@resonate.is">members@resonate.is</a> to be notified when signup is live again.'
       },
       {
         question: 'As a small label of a few artists, do I have to wait for Label Account signup to be re-enabled? Can I sign up our artists now by creating and managing multiple Artist Accounts?',
@@ -140,7 +140,7 @@ const faq = [
       },
       {
         question: 'Can I change my account type later?',
-        answer: 'Yes. To change an existing Listener Account to an Artist Account, visit this page. For changes between other account types, contact <a href="mailto:members@justifay.is">members@justifay.is</a>. Note, changing an account type will not automatically change a previously registered membership.'
+        answer: 'Yes. To change an existing Listener Account to an Artist Account, visit this page. For changes between other account types, contact <a href="mailto:members@resonate.is">members@resonate.is</a>. Note, changing an account type will not automatically change a previously registered membership.'
       }
     ]
   },
@@ -157,7 +157,7 @@ const faq = [
       },
       {
         question: 'I am having log in issues',
-        answer: 'Before requesting support, make sure that you are using the email associated with your Justifay account. If you are having issues, please request a new password. You may have to wait up to a minute for your new password to become active. Your password might not be accepted if it contains certain non-alphanumerics such as " and . If you have tried requesting a new password and are still having difficulties, please contact us at <a href="mailto:members@justifay.is">members@justifay.is</a> and describe your issue in detail.'
+        answer: 'Before requesting support, make sure that you are using the email associated with your Justifay account. If you are having issues, please request a new password. You may have to wait up to a minute for your new password to become active. Your password might not be accepted if it contains certain non-alphanumerics such as " and . If you have tried requesting a new password and are still having difficulties, please contact us at <a href="mailto:members@resonate.is">members@resonate.is</a> and describe your issue in detail.'
       },
       {
         question: 'How do I delete my account?',
@@ -174,7 +174,7 @@ const faq = [
     items: [
       {
         question: 'Can I change monetisation settings of my music?',
-        answer: 'Yes, you can toggle any track between monetised (stream2own) or non-monetised (free-to-stream). Currently, these are the two options. To change these settings, contact <a href="mailto:members@justifay.is">members@justifay.is</a>.'
+        answer: 'Yes, you can toggle any track between monetised (stream2own) or non-monetised (free-to-stream). Currently, these are the two options. To change these settings, contact <a href="mailto:members@resonate.is">members@resonate.is</a>.'
       },
       {
         question: 'As an artist with music on Justifay, how do I receive payouts?',

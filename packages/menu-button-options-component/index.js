@@ -7,25 +7,25 @@ const nanostate = require('nanostate')
 const nanologger = require('nanologger')
 
 // components
-const MenuButton = require('@justifay/menu-button-component')
-const Dialog = require('@justifay/dialog-component')
-const Button = require('@justifay/button-component')
+const MenuButton = require('@resonate/menu-button-component')
+const Dialog = require('@resonate/dialog-component')
+const Button = require('@resonate/button-component')
 
 // elements
-const icon = require('@justifay/icon-element')
-const input = require('@justifay/input-element')
-const button = require('@justifay/button')
-const TimeElement = require('@justifay/time-element')
-const imagePlaceholder = require('@justifay/svg-image-placeholder')
+const icon = require('@resonate/icon-element')
+const input = require('@resonate/input-element')
+const button = require('@resonate/button')
+const TimeElement = require('@resonate/time-element')
+const imagePlaceholder = require('@resonate/svg-image-placeholder')
 
 // utils
 const dedent = require('dedent')
 const compare = require('nanocomponent/compare')
 const clone = require('shallow-clone')
 const isEqual = require('is-equal-shallow')
-const { formatCredit, calculateRemainingCost, calculateCost } = require('@justifay/utils')
+const { formatCredit, calculateRemainingCost, calculateCost } = require('@resonate/utils')
 
-const { getAPIServiceClient, getAPIServiceClientWithAuth } = require('@justifay/api-service')({
+const { getAPIServiceClient, getAPIServiceClientWithAuth } = require('@resonate/api-service')({
   apiHost: process.env.APP_HOST || 'https://stream.justifay.coop',
   base: process.env.API_BASE || '/api/v3'
 })

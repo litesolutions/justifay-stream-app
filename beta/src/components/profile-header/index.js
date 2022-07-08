@@ -1,6 +1,6 @@
 const Component = require('choo/component')
 const html = require('choo/html')
-const imagePlaceholder = require('@justifay/svg-image-placeholder')
+const imagePlaceholder = require('@resonate/svg-image-placeholder')
 
 /*
  * Generic profile header for all types of user members

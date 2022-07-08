@@ -1,11 +1,11 @@
-# @justifay/envlocalify
+# @resonate/envlocalify
 
 Expose process.env variables in bundle
 
 # Installation
 
 ```sh
-npm i --save-dev @justifay/envlocalify
+npm i --save-dev @resonate/envlocalify
 ```
 
 ## License
@@ -14,4 +14,4 @@ MIT
 
 ## Author(s)
 
-- Augustin Godiscal <auggod@justifay.is>
+- Augustin Godiscal <auggod@resonate.is>

@@ -1,5 +1,5 @@
 const Nanocomponent = require('nanocomponent')
-const button = require('@justifay/button')
+const button = require('@resonate/button')
 
 /**
  * <button> element wrapper

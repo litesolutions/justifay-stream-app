@@ -5,7 +5,7 @@ const isUrl = require('validator/lib/isURL')
 const resolvePlaysAndFavorites = require('../lib/resolve-plays-favorites')
 const LoaderTimeout = require('../lib/loader-timeout')
 
-const { getAPIServiceClientWithAuth } = require('@justifay/api-service')({
+const { getAPIServiceClientWithAuth } = require('@resonate/api-service')({
   apiHost: process.env.APP_HOST,
   base: process.env.API_BASE || '/api/v3'
 })
@@ -17,7 +17,7 @@ const { getAPIServiceClientWithAuth } = require('@justifay/api-service')({
 const logger = require('nanologger')
 const log = logger('stream2own')
 
-const Playlist = require('@justifay/playlist-component')
+const Playlist = require('@resonate/playlist-component')
 
 function app () {
   return (state, emitter) => {

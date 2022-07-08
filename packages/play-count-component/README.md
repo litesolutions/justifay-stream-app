@@ -1,11 +1,11 @@
-# @justifay/play-count-component
+# @resonate/play-count-component
 
-Wrapper around `@justifay/play-count` element
+Wrapper around `@resonate/play-count` element
 
 ## Installation
 
 ```sh
-npm install @justifay/play-count-compnent --save
+npm install @resonate/play-count-compnent --save
 ```
 
 ## LICENSE
@@ -14,4 +14,4 @@ MIT
 
 ## Author(s)
 
-- Augustin Godiscal <auggod@justifay.is>
+- Augustin Godiscal <auggod@resonate.is>

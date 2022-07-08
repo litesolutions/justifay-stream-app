@@ -1,5 +1,5 @@
 {
-  "name": "@justifay/icon-element",
+  "name": "@resonate/icon-element",
   "version": "1.4.0",
   "description": "Icon element",
   "main": "index.js",
@@ -9,7 +9,7 @@
   "keywords": [
     "svg"
   ],
-  "author": "Augustin Godiscal <auggod@justifay.is>",
+  "author": "Augustin Godiscal <auggod@resonate.is>",
   "repository": "justifaycoop/stream2own",
   "license": "MIT",
   "publishConfig": {

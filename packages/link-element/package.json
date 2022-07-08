@@ -1,5 +1,5 @@
 {
-  "name": "@justifay/link-element",
+  "name": "@resonate/link-element",
   "version": "1.2.0",
   "description": "Render html link element",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "test-deps": "dependency-check . && dependency-check . --extra"
   },
   "keywords": [],
-  "author": "Augustin Godiscal <auggod@justifay.is>",
+  "author": "Augustin Godiscal <auggod@resonate.is>",
   "repository": "justifaycoop/stream2own",
   "license": "MIT",
   "publishConfig": {

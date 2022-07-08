@@ -1,5 +1,5 @@
 {
-  "name": "@justifay/play-count",
+  "name": "@resonate/play-count",
   "version": "2.1.2",
   "description": "Render or animate counter elemen",
   "main": "index.js",
@@ -13,7 +13,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "author": "Augustin Godiscal <auggod@justifay.is>",
+  "author": "Augustin Godiscal <auggod@resonate.is>",
   "repository": "justifaycoop/stream2own",
   "license": "MIT",
   "bugs": {

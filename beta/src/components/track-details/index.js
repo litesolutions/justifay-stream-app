@@ -1,6 +1,6 @@
 const Component = require('choo/component')
 const html = require('choo/html')
-const TrackComponent = require('@justifay/track-component')
+const TrackComponent = require('@resonate/track-component')
 
 class TrackDetails extends Component {
   constructor (id, state, emit) {

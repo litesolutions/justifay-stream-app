@@ -5,7 +5,7 @@ Render or animate play count counter element
 ## Installation
 
 ```sh
-npm i --save @justifay/play-count
+npm i --save @resonate/play-count
 ```
 
 ## License
@@ -14,4 +14,4 @@ MIT
 
 ## Author(s)
 
-- Augustin Godiscal <auggod@justifay.is>
+- Augustin Godiscal <auggod@resonate.is>

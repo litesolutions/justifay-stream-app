@@ -1,6 +1,6 @@
 const html = require('choo/html')
 const viewLayout = require('../../layouts/search')
-const imagePlaceholder = require('@justifay/svg-image-placeholder')
+const imagePlaceholder = require('@resonate/svg-image-placeholder')
 const card = require('../../components/profiles/card')
 const { isNode } = require('browser-or-node')
 
