@@ -23,7 +23,7 @@ function renderDiscover (state, emit) {
           ? html`
               <a
                 class="link pv2 ph3 ttu ba b--mid-gray b--dark-gray--dark f6 b"
-                href="https://justifay.com/#sumate"
+                href="https://id.justifay.com/join"
               >
                 Join now
               </a>
