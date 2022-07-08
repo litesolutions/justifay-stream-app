@@ -9,13 +9,13 @@
   },
   "keywords": [],
   "author": "Augustin Godiscal <auggod@resonate.is>",
-  "repository": "justifaycoop/stream2own",
+  "repository": "@resonatecoop/stream2own",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
   "bugs": {
-    "url": "https://github.com/justifaycoop/stream2own/issues"
+    "url": "https://github.com/@resonatecoop/stream2own/issues"
   },
   "dependencies": {
     "nanohtml": "^1.8.1"

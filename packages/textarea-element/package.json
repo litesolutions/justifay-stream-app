@@ -15,10 +15,10 @@
     "access": "public"
   },
   "bugs": {
-    "url": "https://github.com/justifaycoop/stream2own/issues"
+    "url": "https://github.com/@resonatecoop/stream2own/issues"
   },
   "author": "Augustin Godiscal <auggod@resonate.is>",
-  "repository": "justifaycoop/stream2own",
+  "repository": "@resonatecoop/stream2own",
   "license": "MIT",
   "dependencies": {
     "@resonate/theme-skins": "^1.1.2",

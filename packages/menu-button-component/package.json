@@ -11,10 +11,10 @@
     "test-deps": "dependency-check . && dependency-check . --extra"
   },
   "author": "Augustin Godiscal <auggod@resonate.is>",
-  "repository": "justifaycoop/stream",
+  "repository": "@resonatecoop/stream",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/justifaycoop/stream/issues"
+    "url": "https://github.com/@resonatecoop/stream/issues"
   },
   "publishConfig": {
     "access": "public"

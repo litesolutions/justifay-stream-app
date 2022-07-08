@@ -20,9 +20,9 @@
       "postcss-custom-media": {}
     }
   },
-  "repository": "justifaycoop/stream2own",
+  "repository": "@resonatecoop/stream2own",
   "bugs": {
-    "url": "https://github.com/justifaycoop/justifay/issues"
+    "url": "https://github.com/@resonatecoop/justifay/issues"
   },
   "publishConfig": {
     "access": "public"

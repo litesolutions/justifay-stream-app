@@ -13,10 +13,10 @@
     "access": "public"
   },
   "author": "Augustin Godiscal <auggod@resonate.is>",
-  "repository": "justifaycoop/stream",
+  "repository": "@resonatecoop/stream",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/justifaycoop/stream/issues"
+    "url": "https://github.com/@resonatecoop/stream/issues"
   },
   "dependencies": {
     "choo": "^7.1.0",

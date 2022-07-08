@@ -10,12 +10,12 @@
     "api",
     "swagger"
   ],
-  "repository": "justifaycoop/stream",
+  "repository": "@resonatecoop/stream",
   "publishConfig": {
     "access": "public"
   },
   "bugs": {
-    "url": "https://github.com/justifaycoop/stream/issues"
+    "url": "https://github.com/@resonatecoop/stream/issues"
   },
   "author": "Augustin Godiscal <auggod@resonate.is>",
   "license": "MIT",
