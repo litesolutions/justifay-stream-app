@@ -71,37 +71,6 @@ function releases () {
       }
     })
 
-    emitter.once('prefetch:discover', async () => {
-      if (!state.prefetch) return
-
-      try {
-        const request = new Promise((resolve, reject) => {
-          (async () => {
-            try {
-              const client = await getAPIServiceClient('trackgroups')
-              const result = await client.getTrackgroups({ limit: 12 })
-
-              return resolve(result.body)
-            } catch (err) {
-              return reject(err)
-            }
-          })()
-        })
-
-        state.prefetch.push(request)
-
-        const response = await request
-
-        if (response.data) {
-          state.releases.items = response.data
-        }
-
-        emitter.emit(state.events.RENDER)
-      } catch (err) {
-        emitter.emit('error', err)
-      }
-    })
-
     emitter.once('prefetch:releases', async () => {
       if (!state.prefetch) return
 
@@ -301,9 +270,7 @@ function releases () {
     })
 
     emitter.on('route:discover', () => {
-      state.cache(List, 'latest-releases-discover')
       setMeta()
-      emitter.emit('releases:find', { limit: 12 })
     })
 
     emitter.on('route:artist/:id/release/:slug', async () => {

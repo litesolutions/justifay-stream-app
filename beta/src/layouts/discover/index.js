@@ -17,7 +17,7 @@ function LayoutDiscovery (view) {
           ${view(state, emit)}
         </main>
         ${state.cache(FeaturedPlaylist, 'featured-playlist').render({
-          uid: state.user.uid
+          tracks: state.tracks || []
         })}
       </div>
     `

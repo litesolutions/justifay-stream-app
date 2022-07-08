@@ -71,7 +71,7 @@ class Track extends Component {
         </div>
         <div class="flex flex-auto flex-shrink-0 justify-end items-center">
           ${showPlayCount ? renderPlayCount(this.local.count, this.local.track.id) : ''}
-          ${!this.local.hideMenu ? this.renderMenuButtonOptions() : ''}
+          ${!this.local.hideMenu && isBrowser ? this.renderMenuButtonOptions() : ''}
           ${TimeElement(this.local.track.duration, { class: 'duration' })}
         </div>
       </li>

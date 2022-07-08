@@ -5,9 +5,7 @@ const compare = require('nanocomponent/compare')
 const nanostate = require('nanostate')
 const clone = require('shallow-clone')
 const Loader = require('@resonate/play-count-component')
-const { isNode } = require('browser-or-node')
 const Track = require('@resonate/track-component')
-const ResponsiveContainer = require('resize-observer-component')
 const icon = require('@resonate/icon-element')
 const { iconFill } = require('@resonate/theme-skins')
 
@@ -23,7 +21,7 @@ class Playlist extends Component {
     this.state = state
 
     this.local = state.components[id] = Object.create({
-      machine: nanostate(isNode ? 'data' : 'idle', {
+      machine: nanostate('data', {
         idle: { start: 'loading', reject: 'error' },
         loading: { resolve: 'data', reject: 'error' },
         data: { start: 'loading' },
@@ -107,9 +105,7 @@ class Playlist extends Component {
         `
       },
       data: () => {
-        const container = new ResponsiveContainer()
-
-        return container.render(html`
+        return html`
           <ul class="playlist flex flex-auto flex-column list ma0 pa0">
             ${this.local.playlist.map((item, index) => {
               const cid = `${this._name}-track-item-${item.track.id}`
@@ -131,7 +127,7 @@ class Playlist extends Component {
               })
             })}
           </ul>
-        `)
+        `
       }
     }[this.local.machine.state]
 
