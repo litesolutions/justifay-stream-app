@@ -59,7 +59,7 @@ class Item extends Component {
                 <span class="f4 fw1 truncate mv1 lh-title">${title}</span>
                 <span class="truncate f5 mb1 lh-copy dark-gray dark-gray--light gray--dark">${artist}</span>
                 <dl class="ma0">
-                  <dt class="clip">Tags</dt>
+                  <dt class="clip">Etiquetas</dt>
                   <dd class="ma0">
                     <ul class="list ma0 pa0 flex flex-wrap">
                       ${tags.slice(0, 3).map((tag) => {

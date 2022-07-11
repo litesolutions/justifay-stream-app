@@ -86,7 +86,7 @@ class Search extends Component {
 
     const renderQuery = q => {
       return html`
-        <span class="query lh-copy f5">${q ? `Searching for: ${q}` : ''}</span>
+        <span class="query lh-copy f5">${q ? `Buscando: ${q}` : ''}</span>
       `
     }
 
@@ -106,7 +106,7 @@ class Search extends Component {
         name: 'q',
         id: 'search',
         required: true,
-        placeholder: this.local.placeholder || 'Search'
+        placeholder: this.local.placeholder || 'Búsqueda'
       }
 
       return html`<input ${attrs}>`
@@ -117,7 +117,7 @@ class Search extends Component {
         <form ${attrs}>
           <label class="search-label flex absolute right-2 z-1" for="search">
             ${icon('search', { size: 'sm', class: 'fill-dark-gray fill-dark-gray--light fill-mid-gray--dark' })}
-            <span class="clip">Search</span>
+            <span class="clip">Búsqueda</span>
           </label>
           <div class="js absolute right-4" style="top:50%;transform:translateY(-50%);">
             ${button({
@@ -129,7 +129,7 @@ class Search extends Component {
               prefix: 'h-100',
               style: 'blank',
               size: 'sm',
-              title: 'Close search',
+              title: 'Cerrar búsqueda',
               justifyCenter: true,
               iconName: 'close',
               iconSize: 'xs'

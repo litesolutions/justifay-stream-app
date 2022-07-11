@@ -21,7 +21,7 @@ function renderDiscover (state, emit) {
                 class="link pv2 ph3 ttu ba b--mid-gray b--dark-gray--dark f6 b"
                 href="https://justifay.com/#sumate"
               >
-                Join now
+                Registrarte
               </a>
             `
           : null}

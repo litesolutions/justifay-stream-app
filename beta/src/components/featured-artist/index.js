@@ -57,13 +57,13 @@ class FeaturedArtist extends Component {
           <a href=${id ? `/artist/${id}` : ''} class="db w-100 link">
             <h3 class="flex flex-column flex-column-reverse f3 f2-l fw2 lh-title ma0 mb1">
               <span class="truncate">${name}</span>
-              <small class="db f6 dark-gray fw1 lh-copy ttu">Featured Artist</small>
+              <small class="db f6 dark-gray fw1 lh-copy ttu">Artista destacado</small>
             </h3>
           </a>
 
           ${this.local.follow
             ? button({
-                text: this.local.machine.state.follow === 'on' ? 'Unfollow' : 'Follow',
+                text: this.local.machine.state.follow === 'on' ? 'Dejar de seguir' : 'Seguir',
                 style: 'none',
                 prefix: 'bg-transparent f7 pv1 ph2 ttu b grow',
                 outline: true,

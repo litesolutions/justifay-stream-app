@@ -25,7 +25,7 @@ function ProfileReleasesView () {
     let bio
 
     if (notFound) {
-      placeholder = renderPlaceholder('Resource not found')
+      placeholder = renderPlaceholder('Sin resultado')
     } else {
       bio = renderBio(state)
     }
@@ -37,7 +37,7 @@ function ProfileReleasesView () {
           <section id="profile-albums" class="flex-auto flex-column mh3 mt4">
             <div class="flex">
               <h3 class="relative f4 mt0 fw3">
-                Discography
+                Discografía
                 <a id="discography" class="absolute" style="top:-120px"></a>
                 ${renderTotal(count)}
               </h3>
