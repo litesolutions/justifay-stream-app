@@ -158,9 +158,9 @@ class Header extends Component<HeaderProps> {
               <a href="/discover" class="link db near-black near-black--light near-white--dark pv2 ph3">Discover</a>
             </li>
             <li class="flex flex-auto w-100 justify-center" role="divider"></li>
-            <li class="${this.state.resolved && !this.state.user.id ? 'flex' : 'dn'} flex-auto justify-center w-100 grow" role="menuitem">
+            <li class="${this.state.resolved && !this.state.user.id ? 'flex' : 'dn'} flex-auto justify-center w-100" role="menuitem">
             ${this.state.href !== '/login'
-              ? html`<a class="link pv1 ph3 ttu ba b--mid-gray b--dark-gray--dark db f6 b" href=${AUTH_HREF} >
+              ? html`<a class="link pv1 ph3 ttu ba b--mid-gray b--dark-gray--dark db f6 b disabled" href=${AUTH_HREF} >
                   Log In
                 </a>`
               : ''}
