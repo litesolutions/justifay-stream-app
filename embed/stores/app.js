@@ -10,8 +10,8 @@ const generateApi = require('../lib/api')
 // v2 api docs
 const SwaggerClient = require('swagger-client')
 
-const Dialog = require('@justifay/dialog-component')
-const Playlist = require('@justifay/playlist-component')
+const Dialog = require('@resonate/dialog-component')
+const Playlist = require('@resonate/playlist-component')
 
 module.exports = store
 
@@ -44,11 +44,11 @@ function store (state, emitter) {
 
   emitter.on('route:embed/track/:id', async () => {
     try {
-      const url = new URL('/api/v3/tracks/apiDocs', process.env.APP_HOST || 'https://stream.justifay.coop')
+      const url = new URL('/api/tracks/apiDocs', process.env.APP_HOST || 'https://stream.justifay.com')
 
       url.search = new URLSearchParams({
         type: 'apiDoc',
-        basePath: '/api/v3/tracks'
+        basePath: '/api/tracks'
       })
 
       const client = await new SwaggerClient(url.href)

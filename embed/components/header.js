@@ -1,7 +1,7 @@
 const Component = require('choo/component')
 const html = require('choo/html')
-const icon = require('@justifay/icon-element')
-const link = require('@justifay/link-element')
+const icon = require('@resonate/icon-element')
+const link = require('@resonate/link-element')
 
 class Header extends Component {
   constructor (id, state, emit) {
