@@ -8,30 +8,30 @@ const { background: bg } = require('@resonate/theme-skins')
 
 const links = [
   {
-    href: '#highlights',
-    text: 'Highlights',
+    href: '#destacados',
+    text: 'Destacados',
     routes: ['artist/:id'],
     kinds: ['artist']
   },
   {
-    href: '#artists',
-    text: 'Artists',
+    href: '#artistas',
+    text: 'Artistas',
     routes: ['label/:id'],
     kinds: ['label']
   },
   {
-    href: '#discography',
-    text: 'Discography',
+    href: '#discografía',
+    text: 'Discografía',
     kinds: ['artist', 'label']
   },
   {
-    href: '#playlists',
-    text: 'Playlists',
+    href: '#listas-de-reproducción',
+    text: 'Listas de reproducción',
     kinds: ['u']
   },
   {
-    href: '#biography',
-    text: 'Bio'
+    href: '#biografía',
+    text: 'Biografía'
   }
 ]
 

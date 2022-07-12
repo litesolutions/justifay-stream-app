@@ -16,36 +16,36 @@ function LayoutSearch (view) {
     const links = (state.route.split('/')[0] === 'search'
       ? [
           {
-            text: 'All'
+            text: 'Todos'
           },
           {
             kind: 'artist',
-            text: 'Artists'
+            text: 'Artistas'
           },
           {
             kind: 'album',
-            text: 'Albums'
+            text: 'Álbum'
           },
           {
             kind: 'track',
-            text: 'Tracks'
+            text: 'Canciones'
           },
           {
             kind: 'label',
-            text: 'Labels'
+            text: 'Sello'
           }
         ]
       : [
           {
-            text: 'All'
+            text: 'Todos'
           },
           {
             kind: 'track',
-            text: 'Tracks'
+            text: 'Canciones'
           },
           {
             kind: 'album',
-            text: 'Albums'
+            text: 'Álbumes'
           }
         ]).filter((item) => {
       if (!item.kind) return true

@@ -111,7 +111,7 @@ class Search extends Component {
         name: 'q',
         id: 'search',
         required: true,
-        placeholder: this.local.placeholder || 'Search'
+        placeholder: this.local.placeholder || 'Búsqueda'
       }
 
       return html`<input ${attrs}>`
@@ -143,7 +143,7 @@ class Search extends Component {
           <div tabindex="0" class="typeahead ${bg} bl br bb bw b--mid-gray b--mid-gray--light b--near-black--dark flex flex-column absolute z-999 w-100 pv1 ph3">
             ${renderQuery(this.local.inputValue)}
             <dl>
-              <dt class="f6 b">Tags</dt>
+              <dt class="f6 b">Etiquetas</dt>
               <dd class="ma0">
                 <ul class="list ma0 pa0 flex flex-wrap">
                   ${this.local.tags.map(tag => {

@@ -44,10 +44,10 @@ function app () {
     function setMeta () {
       const title = {
         '/': 'Justifay',
-        discover: 'Discover',
-        faq: 'FAQ',
+        discover: 'Descubrimiento',
+        faq: 'Preguntas frecuentes',
         login: 'Login',
-        search: state.query.q ? state.query.q + ' • ' + 'Search' : 'Search',
+        search: state.query.q ? state.query.q + ' • ' + 'Búsqueda' : 'Búsqueda',
         settings: 'Settings',
         'u/:id': 'Profile',
         'u/:id/library/:type': {
@@ -65,7 +65,7 @@ function app () {
         title: setTitle(title),
         'twitter:card': 'summary_large_image',
         'twitter:title': setTitle(title),
-        'twitter:site': '@resonatecoop'
+        'twitter:site': '@justifaymusica'
       })
     }
 

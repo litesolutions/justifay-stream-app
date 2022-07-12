@@ -18,7 +18,7 @@ function renderArtists (state, emit) {
   let bio
 
   if (notFound) {
-    placeholder = renderPlaceholder('Resource not found')
+    placeholder = renderPlaceholder('Sin resultado')
   } else {
     bio = renderBio(state)
   }

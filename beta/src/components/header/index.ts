@@ -155,7 +155,7 @@ class Header extends Component<HeaderProps> {
           <ul class="flex list ma0 pa0 w-100 w-90-l justify-around items-center mr3" role="menu">
             <li class="flex flex-auto w-100 justify-center" role="divider"></li>
             <li class="flex flex-auto w-100 justify-center relative${this.state.href === '/discover' ? ' active' : ''}" role="menuitem">
-              <a href="/discover" class="link db near-black near-black--light near-white--dark pv2 ph3">Discover</a>
+              <a href="/discover" class="link db near-black near-black--light near-white--dark pv2 ph3">Descubrimiento</a>
             </li>
             <li class="flex flex-auto w-100 justify-center" role="divider"></li>
             <li class="${this.state.resolved && !this.state.user.id ? 'flex' : 'dn'} flex-auto justify-center w-100" role="menuitem">
@@ -365,7 +365,7 @@ class Header extends Component<HeaderProps> {
             style="height:3rem"
           >
             ${icon('search', { size: 'sm' })}
-            <span class="db pl3 near-black near-black--light near-white--dark">Search</span>
+            <span class="db pl3 near-black near-black--light near-white--dark">Búsqueda</span>
           </button>
         `
       }

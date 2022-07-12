@@ -30,7 +30,7 @@ function renderProfile (state, emit) {
   let topTracks
 
   if (notFound) {
-    placeholder = renderPlaceholder('Resource not found')
+    placeholder = renderPlaceholder('Sin resultado')
   } else {
     artists = renderArtists(state)
     discography = renderDiscography(state)
@@ -120,7 +120,7 @@ function renderTopTracks (state) {
   return html`
     <section class="ph3 mt4">
       <h3 class="fw3 lh-title relative mb3">
-        Highlights
+        Destacados
         <a id="highlights" class="absolute" style="top:-120px"></a>
       </h3>
       ${state.cache(Playlist, `top-tracks-${kind}-${state.params.id}`).render({
@@ -175,7 +175,7 @@ function renderDiscography (state) {
     <section class="flex-auto mh3 mt4">
       <div class="flex">
         <h3 class="fw3 lh-title relative mb4">
-          Discography
+          Discografía
           <a id="discography" class="absolute" style="top:-120px"></a>
           ${renderTotal(count)}
         </h3>

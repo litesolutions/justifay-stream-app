@@ -14,7 +14,7 @@ function renderBio (state) {
       <div class="flex flex-column flex-row-l">
         <article class="w-100 mw6">
           <h3 class="relative f4 mt0 fw3">
-            Bio
+            Biografía
             <a id="biography" class="absolute" style="top:-120px"></a>
           </h3>
           ${bio ? html`<p class="lh-copy">${raw(bio)}</p>` : html`<p class="lh-copy dark-gray">${name} has not provided a biography yet.</p>`}
