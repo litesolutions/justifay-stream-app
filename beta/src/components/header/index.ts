@@ -75,7 +75,7 @@ class Header extends Component<HeaderProps> {
         value: 'yes',
         outline: true,
         theme: 'light',
-        text: 'Log out'
+        text: 'Salir'
       })
 
       const cancelButton = button({
@@ -89,11 +89,11 @@ class Header extends Component<HeaderProps> {
       const machine = this.local.machine
 
       const dialogEl = this.state.cache(Dialog, 'header-dialog').render({
-        title: 'Log out',
+        title: 'Salir',
         prefix: 'dialog-default dialog--sm',
         content: html`
           <div class="flex flex-column">
-            <p class="lh-copy f5">Confirm you want to log out.</p>
+            <p class="lh-copy f5">Confirme que desea cerrar la sesión.</p>
             <div class="flex items-center">
               <div class="mr3">
                 ${confirmButton}
@@ -159,11 +159,15 @@ class Header extends Component<HeaderProps> {
             </li>
             <li class="flex flex-auto w-100 justify-center" role="divider"></li>
             <li class="${this.state.resolved && !this.state.user.id ? 'flex' : 'dn'} flex-auto justify-center w-100 grow" role="menuitem">
-            ${this.state.href !== '/login'
-              ? html`<a class="link pv1 ph3 ttu ba b--mid-gray b--dark-gray--dark db f6 b" href=${AUTH_HREF} >
-                  Log In
+              ${this.state.href !== '/login'
+                ? html`<a
+                  class="link pv1 ph3 ttu ba b--mid-gray b--dark-gray--dark db f6 b"
+                  style="white-space: nowrap; white-space: pre"
+                  href=${AUTH_HREF}
+                >
+                  Iniciar sesión
                 </a>`
-              : ''}
+                : ''}
             </li>
             <li class="${this.state.resolved ? 'dn' : 'flex'} flex-auto w-100 justify-center" role="divider"></li>
             <li class="${!this.state.user.id ? 'dn' : 'flex'} flex-auto justify-center w-100" role="menuitem">
@@ -197,7 +201,7 @@ class Header extends Component<HeaderProps> {
                   <a class="link db pv2 pl3" target="_blank" href="${process.env.OAUTH_HOST}/account">Account</a>
                 </li>
                 <li class="mb1" role="menuitem">
-                  <a class="link db pv2 pl3" href="/settings">Settings</a>
+                  <a class="link db pv2 pl3" href="/settings">Ajustes</a>
                 </li>
                 <li class="bb bw b--mid-gray b--mid-gray--light b--near-black--dark mb3" role="separator"></li>
                 <li class="${!this.state.user.id ? 'dn' : ''} pr3 pb3" role="menuitem">
@@ -206,7 +210,7 @@ class Header extends Component<HeaderProps> {
                       prefix: 'ttu near-black near-black--light near-white--dark f6 ba b--mid-gray b--mid-gray--light b--dark-gray--dark',
                       onClick: (e) => this.local.machine.emit('logoutDialog:open'),
                       style: 'blank',
-                      text: 'Log out',
+                      text: 'Salir',
                       outline: true
                     })}
                   </div>
