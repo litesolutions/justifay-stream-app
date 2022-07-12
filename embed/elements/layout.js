@@ -1,10 +1,10 @@
 const html = require('choo/html')
-const Player = require('@justifay/player-component')
+const Player = require('@resonate/player-component')
 const Header = require('../components/header')
 const {
   background: bg,
   text
-} = require('@justifay/theme-skins')
+} = require('@resonate/theme-skins')
 
 module.exports = (view) => {
   return (state, emit) => {

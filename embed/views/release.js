@@ -1,6 +1,6 @@
 const html = require('choo/html')
-const imagePlaceholder = require('@justifay/svg-image-placeholder')
-const Playlist = require('@justifay/playlist-component')
+const imagePlaceholder = require('@resonate/svg-image-placeholder')
+const Playlist = require('@resonate/playlist-component')
 
 module.exports = view
 

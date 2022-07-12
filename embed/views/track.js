@@ -1,6 +1,6 @@
 const html = require('choo/html')
-const imagePlaceholder = require('@justifay/svg-image-placeholder')
-const TrackComponent = require('@justifay/track-component')
+const imagePlaceholder = require('@resonate/svg-image-placeholder')
+const TrackComponent = require('@resonate/track-component')
 
 module.exports = view
 

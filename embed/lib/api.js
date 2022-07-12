@@ -1,4 +1,4 @@
-const apiFactoryGenerator = require('@justifay/api-factory-generator')
+const apiFactoryGenerator = require('@resonate/api-factory-generator')
 
 /**
  * REST API configuration
