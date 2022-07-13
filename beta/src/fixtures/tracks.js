@@ -49,7 +49,7 @@ module.exports = [
       id: 8,
       creator_id: 2,
       title: 'Talk [NCS Release]',
-      duration: 1802,
+      duration: 182,
       year: 2018,
       artist: 'Beave',
       status: 'Paid',
